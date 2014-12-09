@@ -1,0 +1,45 @@
+<Sentence id="1">			
+1	((	NP	
+1.1	అల్లరి	NN	<fs af='అల్లరి,n,,sg,,d,0,0'>
+	))		
+2	((	NP	
+2.1	నరేష్	NN	<fs af='నరేష్,n,,sg,,d,0,0'>
+	))		
+3	((	VGF	
+3.1	మాట్లాడుతూ	VM	<fs af='మాట్లాడు,v,any,any,any,,తూ,wU'>
+3.2	,	SYM	<fs af=',,punc,,,,,' poslcat="NM">
+	))		
+4	((	NP	
+4.1	ఇందులో	PRP	<fs af='ఇందులో,avy,,,,,,' poslcat="NM">
+	))		
+5	((	NP	
+5.1	బంగార్రాజుకు	NN	<fs af='బంగార్రాజుకు,unk,,,,,,' poslcat="NM">
+	))		
+6	((	NP	
+6.1	సుడి	NN	<fs af='సుడి,n,,sg,,d,0,0'>
+	))		
+7	((	VGF	
+7.1	ఏVక్కువనీ	VM	<fs af='ఏVక్కువనీ,unk,,,,,,' poslcat="NM">
+7.2	,	SYM	<fs af=',,punc,,,,,' poslcat="NM">
+	))		
+8	((	NP	
+8.1	అతనితో	PRP	<fs af='అతను,pn,m,sg,3,,తో,wo'>
+	))		
+9	((	NP	
+9.1	పందెం	NN	<fs af='పందెం,n,,sg,,d,0,0'>
+	))		
+10	((	NP	
+10.1	కడితో	NN	<fs af='కడితి,n,,sg,,,0,0_o'>
+	))		
+11	((	NP	
+11.1	ఊళలో	NN	<fs af='ఊరు,n,,sg,,,లో,lo'>
+11.2	ఏVవరైనా	WQ	<fs af='ఏVవరైనా,avy,,,,,0,0_avy' poslcat="NM">
+	))		
+12	((	VGNF	
+12.1	ఓడిపోవ్వలసిందేననీ	VM	<fs af='ఓడిపోవ్వలసిందేననీ,unk,,,,,,' poslcat="NM">
+	))		
+13	((	VGF	
+13.1	అన్నారు	VM	<fs af='అను,v,fm,pl,3,,ఆ,A'>
+13.2	।	SYM	<fs af='।,punc,,,,,,'>
+	))		
+</Sentence>			

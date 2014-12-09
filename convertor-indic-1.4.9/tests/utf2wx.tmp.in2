@@ -1,0 +1,8 @@
+<Sentence id="1">
+0	((	SSF
+1	((	VGF	<fs af='खाणे,v,n,sg,,o,ने_के_लिए,@ण्या_साठी' kridanta_type='ne' aspect='p' kridanta_cm='0_लिए' head='खाण्यासाठी'>
+1.1	खाना	VM	<fs af='खाना,v,n,sg,,o,ने_के_लिए,ण्या_साठी' kridanta_type='ne' name='खाण्यासाठी' aspect='p' kridanta_cm='0_लिए'>
+1.2	@.	SYM	<fs af='@.,pun,,,,,,' name='.' poslcat='NM'>
+	))
+	))
+</Sentence>

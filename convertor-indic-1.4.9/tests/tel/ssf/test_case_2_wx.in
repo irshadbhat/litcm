@@ -1,0 +1,15 @@
+<Sentence id="1">
+1	kamitI	NN	<fs af='kamitI,n,,sg,,d,0,0'>|<fs af='kamitI,n,,sg,,d,0,0'>|<fs af='kamitI,n,,sg,,o,ti,ti'>|<fs af='kamitI,n,,sg,,o,ti,ti'>
+2	kAryanirvahaNaku	NN	<fs af='kAryanirvahaNa,n,,sg,,,ki,ki'>
+3	avasaramEna	JJ	<fs af='avasaramavvu,v,any,any,any,,ina,ina'>|<fs af='avasaraM,n,,sg,,,Ena,Ena'>
+4	mOlika	NN	<fs af='mOlikaM,n,,sg,,o,ti,ti'>
+5	erpAtlapE	NN	<fs af='erpAtu,n,,pl,,,pE,pE'>|<fs af='erpAtu,n,,pl,,,pE,pE'>
+6	I	DEM	<fs af='I,avy,,,,,,'>
+7	paryatanalo	NN	<fs af='paryatana,n,,pl,,,0,0_o'>|<fs af='paryatana,n,,sg,,,lo,lo'>
+8	BAgaMgA	RB	<fs af='BAgaM,n,,sg,,,gA,gA'>
+9	wAmu	PRP	<fs af='wAmu,pn,any,sg,2,d,0,0'>
+10	samIkRiMcukuMtAmannAru	VM	<fs af='samIkRiMcukuMtAmannAunk,unk,,,,,,'>
+11	.	SYM	<fs af='.,punc,,,,,,'>
+</Sentence>
+<Sentence id="2">
+</Sentence>

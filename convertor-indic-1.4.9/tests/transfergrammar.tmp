@@ -1,0 +1,12 @@
+<Sentence id="1">               	
+1	((	NP	<fs af='pakRikalY,unkn,,,,,,' poslcat="NM" head="pakRikalY" arg="SUB">
+1.1	pakRikalY	NN	<fs af='pakRikalY,unkn,,,,,,' poslcat="NM" name="pakRikalY">
+	))		
+2	((	NP	<fs af='AkASawwil,unkn,,,,,,' poslcat="NM" head="AkASawwil" arg="SUB">
+2.1	AkASawwil	NN	<fs af='AkASawwil,unkn,,,,,,' poslcat="NM" name="AkASawwil">
+	))		
+3	((	VGF	<fs af='parYakk,v,any,any,any,,unna,unna' head="parYakkunna">
+3.1	parYakkunna	VM	<fs af='parYakk,v,,,,,unna,unna' name="parYakkunna">
+3.2	.	SYM	<fs af='.,punc,,,,,,'>
+	))		
+</Sentence>

@@ -1,0 +1,30 @@
+<Sentence id="1">			
+1	((	NP	<fs af='కేవలం,n,,sg,,d,0,0' head="కేవలం"  name='1'>
+1.1	కేవలం	NN	<fs af='కేవలం,n,,sg,,d,0,0' name="కేవలం">
+	))		
+2	((	RBP	<fs af='హాయిగా,avy,,,,,0,0_avy' head="హాయిగా"  name='2'  poslcat="NM">
+2.1	హాయిగా	RB	<fs af='హాయిగా,avy,,,,,0,0_avy' name="హాయిగా"  poslcat="NM">
+	))		
+3	((	NP	<fs af='జీవితం,n,,sg,,,ను,nu' vpos="vib1"  head="జీవితాన్ని"  name='3'>
+3.1	జీవితాన్ని	NN	<fs af='జీవితం,n,,sg,,,ను,nu' name="జీవితాన్ని">
+	))		
+4	((	VGNF	<fs af='గడపు,v,any,any,any,,అడం,adaM' head="గడపడం"  name='4'>
+4.1	@kalYYi	VM	<fs af='^@kalYYi,v,any,any,any,,అడం,adaM' name="గడపడం">
+	))		
+5	((	VGNF	<fs af='వచ్చు,v,any,any,any,,తే,we' head="వస్తే"  name='5'>
+5.1	^తెరి	VM	<fs af='^@weVri,v,any,any,any,,తే,we' name="వస్తే">
+	))		
+6	((	VGNF	<fs af='చాలు,v,,sg,2,,ఆజ్ఞార్థ,AjFArWa' head="చాలు"  name='6'>
+6.1	^@cAlu	VM	<fs af='@cAlu,v,,sg,2,,@AjFArWa,AjFArWa' name="చాలు">
+	))		
+7	((	VGNF	<fs af='అను,v,fm,pl,3,,తున్న్,wunn' head="అంటున్నారు"  name='7'>
+7.1	అంటున్నారు	VM	<fs af='అను,v,fm,pl,3,,తున్న్,wunn' name="అంటున్నారు">
+	))		
+8	((	NP	<fs af='మానసిక,n,,sg,,d,0,0' head="మానసిక"  name='8'>
+8.1	మోతత్తువ	NN	<fs af='^@manYowawwuva,n,,sg,,d,^@mA,0' name="మానసిక">
+	))		
+9	((	NP	<fs af='వైద్యనిపుణుడు,n,,pl,,d,0,0' head="వైద్యనిపుణులు"  name='9'>
+9.1	వల్లునర్	NN	<fs af='^@vallunar,n,,pl,,d,^కా,0' name="వైద్యనిపుణులు">
+9.2	.	SYM	<fs af='&dot;,punc,,,,,,'>
+	))		
+</Sentence>

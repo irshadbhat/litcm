@@ -1,0 +1,29 @@
+<Sentence id="1">			
+1	((	NP	<fs af='కమిటీ,n,n,sg,,d,0,0' head="కమిటీ">
+1.1	కమిటీ	NN	<fs af='కమిటీ,n,n,sg,,d,0,0' name="కమిటీ">
+	))		
+2	((	NP	<fs af='కార్యనిర్వహణ,n,n,sg,,,కి,ki' head="కార్యనిర్వహణకు">
+2.1	కార్యనిర్వహణకు	NN	<fs af='కార్యనిర్వహణ,n,n,sg,,,కి,ki' name="కార్యనిర్వహణకు">
+	))		
+3	((	NP	<fs af='మౌలికం,n,n,sg,,o,టి,ti' head="మౌలిక">
+3.1	అవసరమైన	JJ	<fs af='అవసరమవ్వు,v,any,any,any,,ఇన,ina' poslcat="NM">
+3.2	మౌలిక	NN	<fs af='మౌలికం,n,n,sg,,o,టి,ti' name="మౌలిక">
+	))		
+4	((	NP	<fs af='ఏర్పాటు,n,n,pl,,,పై,pE' head="ఏర్పాట్లపై">
+4.1	ఏర్పాట్లపై	NN	<fs af='ఏర్పాటు,n,n,pl,,,పై,pE' name="ఏర్పాట్లపై">
+	))		
+5	((	NP	<fs af='పర్యటన,n,n,sg,,,లో,lo' head="పర్యటనలో">
+5.1	ఈ	DEM	<fs af='ఈ,avy,,,,,,' poslcat="NM">
+5.2	పర్యటనలో	NN	<fs af='పర్యటన,n,n,sg,,,లో,lo' name="పర్యటనలో">
+	))		
+6	((	RBP	<fs af='భాగం,n,,sg,,,లో,gA' head="భాగంగా"  poslcat="NM">
+6.1	భాగంగా	RB	<fs af='భాగం,n,,sg,,,లో,gA' name="భాగంగా"  poslcat="NM">
+	))		
+7	((	NP	<fs af='తాము,pn,n,sg,2,d,0,0' head="తాము">
+7.1	తాము	PRP	<fs af='తాము,pn,n,sg,2,d,0,0' name="తాము">
+	))		
+8	((	VGF	<fs af='సమీక్షించుకుంటామన్నాఉన్క్,v,,,,,,' head="సమీక్షించుకుంటామన్నారు"  poslcat="NM">
+8.1	సమీక్షించుకుంటామన్నారు	VM	<fs af='సమీక్షించుకుంటామన్నాఉన్క్,v,,,,,,' name="సమీక్షించుకుంటామన్నారు"  poslcat="NM">
+8.2	।	SYM	<fs af='।,punc,,,,,,'>
+	))		
+</Sentence>			

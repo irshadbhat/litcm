@@ -1,0 +1,41 @@
+1	((	SSF	
+1.1	((	VGF	<fs af='ceVy,v,m,sg,3,,i_koVlY_i_iru_nw,koVn_wU_uMdu_A_A' head='cesukuMtunnAdA'  name='1'>
+1.1.1	eVwAvawu	RB	<fs af='eVwAvawu,avy,,,,,0,0' name='exEnA'>
+1.1.2	ceVywu	VM	<fs af='ceVy,v,m,sg,3,,i,koVn_wU_uMdu_A_A' name=cesukuMtunnAdA>
+1.1.3	koVNtu	VAUX	<fs af='koVlY,v,m,sg,3,,i,'>
+1.1.4	irunwAnY	VAUX	<fs af='iru,v,m,sg,3,,nw,'>
+1.1.5	...	SYM	<fs af='..,punc,,,,,,' name='...'>
+	))		
+1.2	((	BLK	<fs af='ani,avy,,,,,0,0_avy' head='ani'  name='2'>
+1.2.1	eVnYrYu	UT	<fs af='eVnYrYu,avy,,,,,0,0_avy' name='ani'>
+	))		
+1.3	((	NP	<fs af='ninYEvu,n,n,pl,,d,0,0' head=Alocanalu drel=k1:5 name=3>
+1.3.1	oVnYrYe	RP	<fs af='oVnYrYe,avy,,,,d,0,0_avy' name=oVkate>
+1.3.2	pEwwiyakAra	JJ	<fs af='pEwwiyakAra,adj,,sg,,o,0,0_adj'>
+1.3.3	ninYEvukalY	NN	<fs af='ninYEvu,n,n,pl,,d,0,0' name=Alocanalu>
+1.3.4	....	SYM	<fs af='&hellep;,punc,,,,,,'>
+	))		
+1.4	((	NP	<fs af='koVFcaneram,n,n,sg,,d,0,0' head=kAsepu drel=k7t:10 name=4 poslcat=NM>
+1.4.1	koVFcaneram	NST	<fs af='koVFcaneram,n,,sg,,d,0,0' name=kAsepu poslcat=NM>
+	))		
+1.5	((	VGNF	<fs af='Aku,v,any,any,any,,nw_a_pirYaku,ina_Aka' head='ayyAka'  name='5'>
+1.5.1	AnYavina_Aka	VM	<fs af='Aku,v,any,any,any,,nw_a,ina_Aka' name=ayyAka>
+1.5.2	pirYakuk	VAUX	<fs af='pirYakuk,v,any,any,any,,,'>
+	))		
+1.6	((	NP	<fs af='kawavu,n,n,sg,,d,0,0' head=walupu name=6>
+1.6.1	kawavuw	NN	<fs af='kawavuw,n,n,sg,,d,0,0' name=walupu>
+	))		
+1.7	((	VGNF	<fs af='eVtu,v,any,any,any,,i,i' head='wIsi'  name='7'>
+1.7.1	wirYanwu	VM	<fs af='wirYanwu,v,any,any,any,,i,i' name=wIsi>
+	))		
+1.8	((	RBP	<fs af='malYlI,avy,,,,,0,0_avy' head='malYlI'  name='8'  poslcat='NM'>
+1.8.1	mINtum	RB	<fs af='mINtum,avy,,,,,0,0_avy' name=malYlI poslcat=NM>
+	))		
+1.9	((	NP	<fs af='veVnakki,avy,,,,,0,0_avy' head='veVnakki'  name='9'  poslcat='NM'>
+1.9.1	wirumpi	NST	<fs af='wirumpi,avy,,,,,0,0_avy' name=veVnakki poslcat=NM>
+	))		
+1.10	((	VGF	<fs af='poyvitu,v,m,sg,3,,nw,A' head='veVlYlipoyAdu'  name='10'>
+1.10.1	poyvittAnY	VM	<fs af='poyvitu,v,m,sg,3,,nw,A' name=veVlYlipoyAdu>
+1.10.2	.	SYM	<fs af='&dot;,punc,,,,,,'>
+	))		
+	))		

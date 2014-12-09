@@ -1,0 +1,26 @@
+<Sentence id="1">
+1	hExarAbAx	NNP	<fs af='hExarAbAx,n,,sg,,d,0,0'>|<fs af='hExarAbAx,n,,sg,,o,ti,ti'>
+2	lo	PSP	<fs af='lo,avy,,,,,,'>|<fs af='la,avy,,,,,o,o_avy'>
+3	guru	NN	<fs af='guruvu,n,,sg,,,I,I'>|<fs af='guruvu,n,,sg,,o,ti,ti'>
+4	,	SYM	<fs af=',,punc,,,,,'>
+5	SukravArAllo	NN	<fs af='SukravAraM,n,,pl,,,lo,lo'>
+6	jastis	NN	<fs af='jastis,n,,sg,,d,0,0'>|<fs af='jastis,n,,sg,,o,ti,ti'>
+7	SrIkqRNa	NNP	<fs af='SrIkqRNa,n,,sg,,d,0,0'>|<fs af='SrIkqRNa,n,,sg,,o,ti,ti'>|<fs af='SrIkqRNudu,n,,sg,,o,ti,ti'>
+8	kamitI	NN	<fs af='kamitI,n,,sg,,d,0,0'>|<fs af='kamitI,n,,sg,,d,0,0'>|<fs af='kamitI,n,,sg,,o,ti,ti'>|<fs af='kamitI,n,,sg,,o,ti,ti'>
+9	paryatana	NN	<fs af='paryatana,n,,sg,,d,0,0'>|<fs af='paryatana,n,,sg,,o,ti,ti'>|<fs af='paryatanaM,n,,sg,,o,ti,ti'>
+10	kevalaM	NN	<fs af='kevalaM,n,,sg,,d,0,0'>|<fs af='keva,n,,pl,,d,nu,nu'>
+11	paricayAniki	VM	<fs af='paricayaM,n,,sg,,,ki,ki'>
+12	,	SYM	<fs af=',,punc,,,,,'>
+13	avagAhana	NN	<fs af='avagAhana,n,,sg,,d,0,0'>|<fs af='avagAhana,n,,sg,,o,ti,ti'>|<fs af='avagAhanaM,n,,sg,,o,ti,ti'>
+14	kosaM	PSP	<fs af='kosaM,avy,,,,,0,0_avy'>
+15	mAwrame	PSP	<fs af='mAwrame,avy,,,,,,'>|<fs af='mAwraM,avy,,,,,e,e_avy'>
+16	ani	UT	<fs af='ani,avy,,,,,0,0_avy'>|<fs af='anu,v,any,any,any,,i,i'>
+17	kamitI	NN	<fs af='kamitI,n,,sg,,d,0,0'>|<fs af='kamitI,n,,sg,,d,0,0'>|<fs af='kamitI,n,,sg,,o,ti,ti'>|<fs af='kamitI,n,,sg,,o,ti,ti'>
+18	saBya	NN	<fs af='saByaM,n,,sg,,o,ti,ti'>|<fs af='saByudu,n,,sg,,o,ti,ti'>
+19	kAryaxarSi	NN	<fs af='kAryaxarSi,n,,sg,,d,0,0'>|<fs af='kAryaxarSi,n,,sg,,o,ti,ti'>
+20	vinox	VM	<fs af='vinox,unk,,,,,,'>
+21	keV	NN	<fs af='keV,avy,,,,,0,0_avy'>
+22	xuggal	NN	<fs af='xuggal,unk,,,,,,'>
+23	weVlipAru	VM	<fs af='weVlupu,v,fm,pl,3,,A,A'>
+24	.	SYM	<fs af='.,punc,,,,,,'>
+</Sentence>

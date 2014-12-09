@@ -1,0 +1,37 @@
+<Sentence id="1">			
+1	हरिद्वार	unk	<fs af='हरिद्वार,n,m,sg,3,d,,'>|<fs af='हरिद्वार,n,m,pl,3,d,,'>|<fs af='हरिद्वार,n,m,sg,3,o,,'>|<fs af='हरिद्वार,n,m,pl,3,o,,'>
+2	में	unk	<fs af='में,psp,,,,,,'>
+3	माँ	unk	<fs af='माँ,n,f,sg,3,d,,'>|<fs af='माँ,n,f,sg,3,o,,'>
+4	गंगा	unk	<fs af='गंगा,n,f,sg,3,d,,'>|<fs af='गंगा,n,f,pl,3,d,,'>|<fs af='गंगा,n,f,sg,3,o,,'>|<fs af='गंगा,n,f,pl,3,o,,'>
+5	एक	unk	<fs af='एक,num,any,any,,any,,'>|<fs af='एक,n,m,sg,3,d,,'>|<fs af='एक,n,m,pl,3,d,,'>|<fs af='एक,n,m,sg,3,o,,'>|<fs af='एक,n,m,pl,3,o,,'>
+6	सिरे	unk	<fs af='सिरा,n,m,pl,3,d,,'>|<fs af='सिरा,n,m,sg,3,o,,'>
+7	से	unk	<fs af='से,v,any,any,any,,0,0'>|<fs af='से,psp,,,,,,'>|<fs af='सा,psp,m,sg,3,o,,'>|<fs af='सा,psp,m,pl,3,d,,'>|<fs af='सा,psp,m,pl,3,o,,'>
+8	दूसरे	unk	<fs af='दूसरा,num,m,pl,3,d,,'>|<fs af='दूसरा,num,m,sg,3,o,,'>
+9	सिरे	unk	<fs af='सिरा,n,m,pl,3,d,,'>|<fs af='सिरा,n,m,sg,3,o,,'>
+10	तक	unk	<fs af='तक,avy,,,,,,'>|<fs af='तक,psp,,,,,,'>
+11	बहती	unk	<fs af='बह,v,f,sg,any,,ता,wA'>
+12	हैं	unk	<fs af='है,v,any,pl,1,,है,hE'>|<fs af='है,v,any,pl,3,,है,hE'>
+13	@ZCOMMA	unk	<fs af='@ZCOMMA,punc,,,,,,'>
+14	लेकिन	unk	<fs af='लेकिन,avy,,,,,,'>
+15	जो	unk	<fs af='जो,avy,,,,,,'>|<fs af='जो,pn,any,sg,3,d,,'>|<fs af='जो,pn,any,pl,3,d,,'>
+16	पुण्य	unk	<fs af='पुण्य,n,m,sg,3,d,,'>|<fs af='पुण्य,n,m,pl,3,d,,'>|<fs af='पुण्य,n,m,sg,3,o,,'>
+17	हर	unk	<fs af='हर,adv,,,,,,'>|<fs af='हर,adj,any,any,,any,,'>
+18	की	unk	<fs af='का,psp,f,sg,,d,,'>|<fs af='का,psp,f,sg,,o,,'>|<fs af='का,psp,f,pl,,d,,'>|<fs af='का,psp,f,pl,,o,,'>|<fs af='कर,v,f,sg,any,,या,yA'>
+19	पौड़ी	unk	<fs af='पौड़ी,n,f,sg,3,d,,'>|<fs af='पौड़ी,n,f,sg,3,o,,'>
+20	में	unk	<fs af='में,psp,,,,,,'>
+21	स्थित	unk	<fs af='स्थित,n,m,sg,3,d,,'>|<fs af='स्थित,n,m,pl,3,d,,'>|<fs af='स्थित,n,m,sg,3,o,,'>|<fs af='स्थित,adj,any,any,,any,,'>
+22	'	unk	<fs af=',punc,,,,,,'>
+23	ब्रह्मकुंड	unk	<fs af='ब्रह्मकुंड,n,m,sg,3,d,,'>|<fs af='ब्रह्मकुंड,n,m,pl,3,d,,'>|<fs af='ब्रह्मकुंड,n,m,sg,3,o,,'>|<fs af='ब्रह्मकुंड,n,m,pl,3,o,,'>
+24	'	unk	<fs af=',punc,,,,,,'>
+25	में	unk	<fs af='में,psp,,,,,,'>
+26	स्नान	unk	<fs af='स्नान,n,m,sg,3,d,,'>|<fs af='स्नान,n,m,pl,3,d,,'>|<fs af='स्नान,n,m,sg,3,o,,'>
+27	से	unk	<fs af='से,v,any,any,any,,0,0'>|<fs af='से,psp,,,,,,'>|<fs af='सा,psp,m,sg,3,o,,'>|<fs af='सा,psp,m,pl,3,d,,'>|<fs af='सा,psp,m,pl,3,o,,'>
+28	मिलता	unk	<fs af='मिल,v,m,sg,any,,ता,wA'>
+29	है	unk	<fs af='है,v,any,sg,2,,है,hE'>|<fs af='है,v,any,sg,3,,है,hE'>
+30	@ZCOMMA	unk	<fs af='@ZCOMMA,punc,,,,,,'>
+31	वह	unk	<fs af='वह,pn,any,sg,3,d,,'>
+32	कहीं	unk	<fs af='कहीं,pn,any,any,3,,,'>|<fs af='कहीं,adv,,,,,,'>|<fs af='कह,v,f,pl,any,,या,yA'>
+33	नहीं	unk	<fs af='नहीं,adv,,,,,,'>
+34	मिलता	unk	<fs af='मिल,v,m,sg,any,,ता,wA'>
+35	।	unk	<fs af='।,punc,,,,,,'>
+</Sentence>			

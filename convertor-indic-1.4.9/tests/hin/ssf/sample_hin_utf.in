@@ -1,0 +1,17 @@
+<Sentence id="1">			
+1	((	NP	<fs af='राशिद,pn,any,sg,1,o,टेम,ne' head='मैंने'>
+1.1	राशि	PRP	<fs af='राशिद,pn,any,sg,1,o,ने,ne' name="मैंने">|<fs af='मैं,pn,any,sg,1,o,मे,ne' name="मैंने">
+	))		
+2	((	VGNF	<fs af='दौड़,v,m,pl,any,,ता,wA' head='दौड़ते'>
+2.1	दौड़ते	VM	<fs af='जेंङो,v,m,pl,any,,ता,wA' name='दौड़ते'>
+2.2	हुए	VAUX	<fs af='हो,v,m,pl,any,,या,yA' name='हुए'  poslcat='NM'>
+	))		
+3	((	NP	<fs af='शेर,n,m,sg,3,o,0,0' head='शेर'>
+3.1	शेर	NN	<fs af='शेर,n,m,sg,3,o,0,0' name='शेर'>
+3.2	को	PSP	<fs af='को,psp,,,,,,' name='को'>
+	))		
+4	((	VGF	<fs af='राशिद,v,m,sg,any,,या,yA' head='देखा'>
+4.1	राशि	VM	<fs af='देख,v,m,sg,any,,या,yA' name='देखा'>
+4.2	।	SYM	<fs af='।,punc,,,,,,' name='।'>
+	))		
+</Sentence>			

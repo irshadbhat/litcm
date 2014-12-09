@@ -1,0 +1,46 @@
+<Sentence id="2">
+1	((	VGF	<fs af='mAna,v,m,sg,any,,yA,yA' head="mAnA">
+1.1	mAnA	VM	<fs af='mAna,v,m,sg,any,,yA,yA' name="mAnA">
+1.2	jAwA	VAUX	<fs af='jA,v,m,sg,any,,wA,wA'>
+1.3	hE	VAUX	<fs af='hE,v,any,sg,2,,hE,hE'>
+	))		
+2	((	CCP	<fs af='ki,avy,,,,,,' head="ki">
+2.1	ki	CC	<fs af='ki,avy,,,,,,' name="ki">
+	))		
+3	((	NP	<fs af='amqwamaMWana,n,m,sg,3,d,,' head="amqwamaMWana">
+3.1	amqwamaMWana	NN	<fs af='amqwamaMWana,n,m,sg,3,d,,' name="amqwamaMWana">
+3.2	ke	PSP	<fs af='kA,psp,m,sg,,o,,'>
+3.3	bAxa	NST	<fs af='bAxa,nst,,,,,,'>
+	))		
+4	((	NP	<fs af='amqwa,n,m,sg,3,d,,' head="amqwa">
+4.1	amqwa	NN	<fs af='amqwa,n,m,sg,3,d,,' name="amqwa">
+4.2	kI	PSP	<fs af='kA,psp,f,sg,,d,,'>
+	))		
+5	((	NP	<fs af='bUzxa,n,f,pl,3,d,,' head="bUzxeM">
+5.1	kuCa	QF	<fs af='kuCa,adv,,,,,,'>
+5.2	bUzxeM	NN	<fs af='bUzxa,n,f,pl,3,d,,' name="bUzxeM">
+	))		
+6	((	NP	<fs af='yahAz,pn,,,,,,' head="yahAz">
+6.1	yahAz	PRP	<fs af='yahAz,pn,,,,,,' name="yahAz">
+	))		
+7	((	VGF	<fs af='gira,v,f,sg,any,,yA,yA' head="girI">
+7.1	girI	VM	<fs af='gira,v,f,sg,any,,yA,yA' name="girI">
+7.2	WIM	VAUX	<fs af='WA,v,f,pl,any,,WA,WA'>
+7.3	@ZCOMMA	SYM	<fs af='@ZCOMMA,punc,,,,,,' poslcat="NM">
+	))		
+8	((	CCP	<fs af='isaliye,avy,,,,,,' head="isalie">
+8.1	isalie	CC	<fs af='isaliye,avy,,,,,,' name="isalie">
+	))		
+9	((	NP	<fs af='yaha,pn,any,sg,3,o,,' head="ise">
+9.1	ise	PRP	<fs af='yaha,pn,any,sg,3,o,,' name="ise">
+	))		
+10	((	NP	<fs af='brahmakuMda,n,m,sg,3,d,,' head="brahmakuMda">
+10.1	brahmakuMda	NNP	<fs af='brahmakuMda,n,m,sg,3,d,,' name="brahmakuMda">
+	))		
+11	((	VGF	<fs af='kaha,v,m,sg,any,,yA,yA' head="kahA">
+11.1	kahA	VM	<fs af='kaha,v,m,sg,any,,yA,yA' name="kahA">
+11.2	jAwA	VAUX	<fs af='jA,v,m,sg,any,,wA,wA'>
+11.3	hE	VAUX	<fs af='hE,v,any,sg,2,,hE,hE'>
+11.4	.	SYM	<fs af='.,punc,,,,,,' poslcat="NM">
+	))		
+</Sentence>

@@ -1,0 +1,26 @@
+1	సూపర్	unk	<fs af='సూపర్,n,,sg,,d,0,0'>|<fs af='సూపర్,n,,sg,,o,టి,ti'>
+2	స్టార్	unk	<fs af='స్టార్,n,,sg,,d,0,0'>|<fs af='స్టార్,n,,sg,,o,టి,ti'>
+3	ననే	unk	<fs af='నన,n,,sg,,,0,0_e'>
+4	అహం	unk	<fs af='అహం,n,,sg,,d,0,0'>
+5	లేకుండా	unk	<fs af='లేకుండా,avy,,,,,0,0_avy'>|<fs af='లేకుండు,v,any,any,any,,ఇ_ఆ,i_A'>
+6	ఆయన	unk	<fs af='ఆయన,pn,,sg,,d,0,0'>|<fs af='ఆయన,pn,,sg,,o,టి,ti'>
+7	చూపిన	unk	<fs af='చూపు,v,any,any,any,,ఇన,ina'>
+8	ఆప్యాయతకు	unk	<fs af='ఆప్యాయత,n,,sg,,,కి,ki'>
+9	కదిలిన	unk	<fs af='కదులు,v,any,any,any,,ఇన,ina'>
+10	పోయిన	unk	<fs af='పోయిన,n,,sg,,d,0,0'>|<fs af='పోయిన,n,,sg,,o,టి,ti'>|<fs af='పో,v,any,any,any,,ఇన,ina'>
+11	యూనిట్	unk	<fs af='యూనిట్,n,,sg,,d,0,0'>|<fs af='యూనిట్,n,,sg,,o,టి,ti'>
+12	సభ్యులు	unk	<fs af='సభ్యుడు,n,,pl,,d,0,0'>|<fs af='సభ్యుడు,n,,pl,,d,వు,vu'>
+13	రజనీ	unk	<fs af='రజని,n,,sg,,,0,0_V'>
+14	,	unk	<fs af=',,punc,,,,,'>
+15	ఆయన	unk	<fs af='ఆయన,pn,,sg,,d,0,0'>|<fs af='ఆయన,pn,,sg,,o,టి,ti'>
+16	కుటుంబ	unk	<fs af='కుటుంబం,n,,sg,,o,టి,ti'>
+17	సభ్యులు	unk	<fs af='సభ్యుడు,n,,pl,,d,0,0'>|<fs af='సభ్యుడు,n,,pl,,d,వు,vu'>
+18	పదికాలాలు	unk	<fs af='పదికాలాలు,unk,,,,,,'>
+19	పాటు	unk	<fs af='పాటు,n,,sg,,d,0,0'>|<fs af='పాటు,n,,sg,,o,టి,ti'>
+20	చల్లగా	unk	<fs af='చల్లగా,avy,,,,,0,0_avy'>|<fs af='చల్లగా,avy,,,,,0,0_avy'>|<fs af='చల్ల,n,,sg,,,గా,gA'>|<fs af='చల్ల,adj,,sg,,,గా,gA_adj'>|<fs af='చల్లు,v,any,any,any,,అ,a_gA'>
+21	ఉండాలని	unk	<fs af='ఉండు,v,any,any,any,,ఆలి_అని,Ali_ani'>
+22	కోరుకుంటూ	unk	<fs af='కోరు,v,any,any,any,,కొన్_తూ,koVn_wU'>
+23	తమ	unk	<fs af='తమ,avy,,,,,0,0_avy'>|<fs af='తాము,pn,any,sg,2,o,టి,ti'>
+24	కృతజ్ఞతలు	unk	<fs af='కృతజ్ఞత,n,,pl,,d,0,0'>|<fs af='కృతజ్ఞత,n,,pl,,d,వు,vu'>
+25	చాటుకున్నారు	unk	<fs af='చాటు,v,fm,pl,3,,కొన్_ఆ,koVn_A'>
+26	।	unk	<fs af='।,punc,,,,,,'>

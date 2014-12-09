@@ -1,0 +1,29 @@
+<Sentence id="1">			
+1	((	NP	<fs af='kamitI,n,n,sg,,d,0,0' head="kamitI">
+1.1	kamitI	NN	<fs af='kamitI,n,n,sg,,d,0,0' name="kamitI">
+	))		
+2	((	NP	<fs af='kAryanirvahaNa,n,n,sg,,,ki,ki' head="kAryanirvahaNaku">
+2.1	kAryanirvahaNaku	NN	<fs af='kAryanirvahaNa,n,n,sg,,,ki,ki' name="kAryanirvahaNaku">
+	))		
+3	((	NP	<fs af='mOlikaM,n,n,sg,,o,ti,ti' head="mOlika">
+3.1	avasaramEna	JJ	<fs af='avasaramavvu,v,any,any,any,,ina,ina' poslcat="NM">
+3.2	mOlika	NN	<fs af='mOlikaM,n,n,sg,,o,ti,ti' name="mOlika">
+	))		
+4	((	NP	<fs af='erpAtu,n,n,pl,,,pE,pE' head="erpAtlapE">
+4.1	erpAtlapE	NN	<fs af='erpAtu,n,n,pl,,,pE,pE' name="erpAtlapE">
+	))		
+5	((	NP	<fs af='paryatana,n,n,sg,,,lo,lo' head="paryatanalo">
+5.1	I	DEM	<fs af='I,avy,,,,,,' poslcat="NM">
+5.2	paryatanalo	NN	<fs af='paryatana,n,n,sg,,,lo,lo' name="paryatanalo">
+	))		
+6	((	RBP	<fs af='BAgaM,n,,sg,,,lo,gA' head="BAgaMgA"  poslcat="NM">
+6.1	BAgaMgA	RB	<fs af='BAgaM,n,,sg,,,lo,gA' name="BAgaMgA"  poslcat="NM">
+	))		
+7	((	NP	<fs af='wAmu,pn,n,sg,2,d,0,0' head="wAmu">
+7.1	wAmu	PRP	<fs af='wAmu,pn,n,sg,2,d,0,0' name="wAmu">
+	))		
+8	((	VGF	<fs af='samIkRiMcukuMtAmannAunk,v,,,,,,' head="samIkRiMcukuMtAmannAru"  poslcat="NM">
+8.1	samIkRiMcukuMtAmannAru	VM	<fs af='samIkRiMcukuMtAmannAunk,v,,,,,,' name="samIkRiMcukuMtAmannAru"  poslcat="NM">
+8.2	।	SYM	<fs af='।,punc,,,,,,'>
+	))		
+</Sentence>			

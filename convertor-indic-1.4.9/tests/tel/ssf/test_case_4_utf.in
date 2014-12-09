@@ -1,0 +1,76 @@
+<Sentence id="1">			
+1	((	NP	
+1.1	సూపర్	NN	<fs af='సూపర్,n,,sg,,d,0,0'>|<fs af='సూపర్,n,,sg,,o,టి,ti'>
+	))		
+2	((	NP	
+2.1	స్టార్	NN	<fs af='స్టార్,n,,sg,,d,0,0'>|<fs af='స్టార్,n,,sg,,o,టి,ti'>
+	))		
+3	((	NP	
+3.1	ననే	PRP	<fs af='నన,n,,sg,,,0,0_e' poslcat="NM">
+	))		
+4	((	NP	
+4.1	అహం	NN	<fs af='అహం,n,,sg,,d,0,0'>
+	))		
+5	((	VGNF	
+5.1	లేకుండా	VM	<fs af='లేకుండు,v,any,any,any,,ఇ_ఆ,i_A'>
+	))		
+6	((	NP	
+6.1	ఆయన	PRP	<fs af='ఆయన,pn,,sg,,d,0,0'>|<fs af='ఆయన,pn,,sg,,o,టి,ti'>
+	))		
+7	((	VGNF	
+7.1	చూపిన	VM	<fs af='చూపు,v,any,any,any,,ఇన,ina'>
+	))		
+8	((	NP	
+8.1	ఆప్యాయతకు	NN	<fs af='ఆప్యాయత,n,,sg,,,కి,ki'>
+	))		
+9	((	VGNF	
+9.1	కదిలిన	VM	<fs af='కదులు,v,any,any,any,,ఇన,ina'>
+	))		
+10	((	VGNF	
+10.1	పోయిన	VM	<fs af='పో,v,any,any,any,,ఇన,ina'>
+	))		
+11	((	NP	
+11.1	యూనిట్	NN	<fs af='యూనిట్,n,,sg,,d,0,0'>|<fs af='యూనిట్,n,,sg,,o,టి,ti'>
+	))		
+12	((	NP	
+12.1	సభ్యులు	NN	<fs af='సభ్యుడు,n,,pl,,d,0,0'>|<fs af='సభ్యుడు,n,,pl,,d,వు,vu'>
+	))		
+13	((	NP	
+13.1	రజనీ	NNP	<fs af='రజని,n,,sg,,,0,0_V'>
+13.2	,	SYM	<fs af=',,punc,,,,,' poslcat="NM">
+	))		
+14	((	NP	
+14.1	ఆయన	PRP	<fs af='ఆయన,pn,,sg,,d,0,0'>|<fs af='ఆయన,pn,,sg,,o,టి,ti'>
+	))		
+15	((	NP	
+15.1	కుటుంబ	NN	<fs af='కుటుంబం,n,,sg,,o,టి,ti'>
+	))		
+16	((	NP	
+16.1	సభ్యులు	NN	<fs af='సభ్యుడు,n,,pl,,d,0,0'>|<fs af='సభ్యుడు,n,,pl,,d,వు,vu'>
+	))		
+17	((	NP	
+17.1	పదికాలాలు	NN	<fs af='పదికాలాలు,unk,,,,,,' poslcat="NM">
+	))		
+18	((	NP	
+18.1	పాటు	NN	<fs af='పాటు,n,,sg,,d,0,0'>|<fs af='పాటు,n,,sg,,o,టి,ti'>
+	))		
+19	((	RBP	
+19.1	చల్లగా	RB	<fs af='చల్లగా,avy,,,,,0,0_avy' poslcat="NM">|<fs af='చల్లగా,avy,,,,,0,0_avy' poslcat="NM">|<fs af='చల్ల,n,,sg,,,గా,gA' poslcat="NM">|<fs af='చల్ల,adj,,sg,,,గా,gA_adj' poslcat="NM">|<fs af='చల్లు,v,any,any,any,,అ,a_gA' poslcat="NM">
+	))		
+20	((	VGNF	
+20.1	ఉండాలని	VM	<fs af='ఉండు,v,any,any,any,,ఆలి_అని,Ali_ani'>
+	))		
+21	((	VGNF	
+21.1	కోరుకుంటూ	VM	<fs af='కోరు,v,any,any,any,,కొన్_తూ,koVn_wU'>
+	))		
+22	((	NP	
+22.1	తమ	PRP	<fs af='తాము,pn,any,sg,2,o,టి,ti'>
+	))		
+23	((	NP	
+23.1	కృతజ్ఞతలు	NN	<fs af='కృతజ్ఞత,n,,pl,,d,0,0'>|<fs af='కృతజ్ఞత,n,,pl,,d,వు,vu'>
+	))		
+24	((	VGF	
+24.1	చాటుకున్నారు	VM	<fs af='చాటు,v,fm,pl,3,,కొన్_ఆ,koVn_A'>
+24.2	।	SYM	<fs af='।,punc,,,,,,'>
+	))		
+</Sentence>			

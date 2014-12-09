@@ -1,0 +1,17 @@
+<Sentence id="1">			
+1	((	NP	<fs af='rASixa,pn,any,sg,1,o,tema,ne' head='mEMne'>
+1.1	rASi	PRP	<fs af='rASixa,pn,any,sg,1,o,ne,ne' name="mEMne">|<fs af='mEM,pn,any,sg,1,o,me,ne' name="mEMne">
+	))		
+2	((	VGNF	<fs af='xOdZa,v,m,pl,any,,wA,wA' head='xOdZawe'>
+2.1	xOdZawe	VM	<fs af='jeMfo,v,m,pl,any,,wA,wA' name='xOdZawe'>
+2.2	hue	VAUX	<fs af='ho,v,m,pl,any,,yA,yA' name='hue'  poslcat='NM'>
+	))		
+3	((	NP	<fs af='Sera,n,m,sg,3,o,0,0' head='Sera'>
+3.1	Sera	NN	<fs af='Sera,n,m,sg,3,o,0,0' name='Sera'>
+3.2	ko	PSP	<fs af='ko,psp,,,,,,' name='ko'>
+	))		
+4	((	VGF	<fs af='rASixa,v,m,sg,any,,yA,yA' head='xeKA'>
+4.1	rASi	VM	<fs af='xeKa,v,m,sg,any,,yA,yA' name='xeKA'>
+4.2	.	SYM	<fs af='.,punc,,,,,,' name='.'>
+	))		
+</Sentence>			

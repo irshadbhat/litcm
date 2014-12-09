@@ -1,0 +1,19 @@
+
+Input		current output	Expected output
+
+alYYakAka		அள்Yஅகாக		அழகாக
+alYYakAnYa		அள்Yஅகான		அழகான
+alYYakurANippotti	அள்Yஅகுராணிப்போட்டி	அழகுராணிப்போட்டி
+anYEwwu		அன்ஐத்து		அனைத்து
+anYrYu		அன்ற்உ		அன்று
+ArYAnYawu		ஆற்ஆனது		ஆறானது
+arYiyappatuvArkalY	அற்இயப்படுவார்கள்	அறியப்படுவார்கள்
+ArYrYinY		ஆற்ற்இன்		ஆற்றின்
+ArYu		ஆற்உ		ஆறு
+ArYukalY		ஆற்உகள்		ஆறுகள்
+ArYukalYukku	ஆற்உகளுக்கு		ஆறுகளுக்கு
+ArYukalYulY		ஆற்உகளுள்		ஆறுகளுள்
+avarYrYil		அவற்ற்இல்		அவற்றில்
+awanYEw		அதன்ஐத்		அதனைத்
+cElAnYiyarkalYE	சைலான்இயர்களை	சைலானியர்களை
+marYrYoVru		மற்றோVரு		மற்றொரு

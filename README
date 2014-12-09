@@ -1,0 +1,48 @@
+Language Identification and Transliteration (LI&T): 
+
+This tool is used for language identification and transliteration of Indic-words 
+in code-mixed data. This tool is meant for six Indian languages; Hindi, Bengali, 
+Kanadda, Tamil, Malayalam and Gujrati code mixed with English. The input file 
+should contain text in only two languages, English and any of the above mentioned 
+Indian languages. It is necessary to mention the Indian language used in the code-
+mixed data by passing an argument after the input file as shown below. 
+
+Preprocessing:
+
+1.  The query file available is a binary file that computes Conditional Posterior 
+    Probabilities (CPP) of lang1 and lang2. Copy this file to usr/bin as shown 
+    below:
+	    ======================
+	    sudo cp query /usr/bin
+	    ======================
+
+    Go to /usr/bin directory and set mode to executable as shown below:
+	
+	    ====================
+	    sudo chmod 111 query
+	    ====================
+
+2.  Move to convertor-indic-1.4.9 directory and copy its path using pwd command to 
+    the .bashrc file as shown below:
+
+	    ============================
+	    export convertorIndic="path"    
+	    ============================
+
+	    e.g.
+	    
+	    ======================================================================================================
+	    export convertorIndic="/home/irshad/Language-Identification-and-Transliteration/convertor-indic-1.4.9"    
+	    ======================================================================================================
+
+
+How to use ??
+
+python --file inputfile --tag hin|ben|kan|mal|tam|guj
+
+
+Contact :
+Irshad Ahmad Bhat
+Inturn IIITH, Hyderabad
+bhatirshad127@gmail.com
+

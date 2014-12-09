@@ -1,0 +1,74 @@
+1	((	NP	<fs af='ixi,pn,f,sg,any,o,ni,E' head=iwE vpos=vib1 drel=k2:4 name=1 case_name=acc paradigm=pn4>
+1.1	xInni	PRP	<fs af='ixi,pn,f,sg,any,o,ni,E' name=iwE case_name=acc paradigm=pn4>
+	))		
+2	((	VGNF	<fs af='munYnYitu,v,any,any,any,o,0,u' vbp='Y'  head='munYnYittu'  name='2'  paradigm='v17'>
+2.1	munYnYitu	VM	<fs af='munYnYitu,v,any,any,any,o,0,u' vbp=Y name=munYnYittu paradigm=v17>
+	))		
+3	((	RBP	<fs af='ninna,adv,n,sg,any,,,' head='nerYrYu'  name='3'  paradigm='adv'>
+3.1	ninna	RB	<fs af='ninna,adv,n,sg,any,,,'>
+	))		
+4	((	VGNF	<fs af='cUdu,v,any,any,any,o,ina,nw_a' head='natanwa'  name='4'  tense='PAST'  paradigm='v12'  rp='Y'>
+4.1	cUsina	VM	<fs af='cUdu,v,any,any,any,o,ina,nw_a' name=natanwa tense=PAST paradigm=v12 rp=Y>
+	))		
+5	((	NP	<fs af='Gatana,n,n,sg,any,d,,' head=nikalYYcci name=5 case_name=nom paradigm=n2>
+5.1	Gatana	NN	<fs af='Gatana,n,n,sg,any,d,,' name=nikalYYcci case_name=nom paradigm=n2>
+	))		
+6	((	NP	<fs af='oVkati,n,n,sg,any,o,lo,il' vpos=vib1 head=oVnYrYil drel=k7:22 name=6 case_name=loc paradigm=n4>
+6.1	oVkatilo	NN	<fs af='oVkati,n,n,sg,any,o,lo,il' name=oVnYrYil case_name=loc paradigm=n4>
+	))		
+7	((	NP	<fs af='newa,n,n,sg,any,d,,' head=walEvar name=7 case_name=nom paradigm=n17>
+7.1	gaNawaMwra	NN	<fs af='gaNawaMwra,n,n,sg,any,d,,' case_name=nom paradigm=n4>
+7.2	newa	NN	<fs af='newa,n,n,sg,any,d,,' name=walEvar case_name=nom paradigm=n17>
+	))		
+8	((	NP	<fs af='prawiBa,n,n,sg,any,d,,' head=pirawipA name=8 case_name=nom paradigm=n1>
+8.1	prawiBa	NN	<fs af='prawiBa,n,n,sg,any,d,,' name=pirawipA case_name=nom paradigm=n1>
+	))		
+9	((	VGNF	<fs af='pAkkIl,n,any,sg,any,d,,' head='pAttIl'  name='9'  case_name='nom'  poslcat='NM'  paradigm='n17'>
+9.1	pAkkIl	VM	<fs af='pAkkIl,n,any,sg,any,d,,' name=pAttIl case_name=nom paradigm=n17 poslcat=NM>
+	))		
+10	((	VGNF	<fs af='kaluvu,v,any,any,any,o,nwu_koVlY_u,nwu_koVlY_u' vbp='Y'  head='kalanwukkoVNtu'  name='10'  paradigm='v12'  poslcat='NM'>
+10.1	kaluvu	VAUX	<fs af='kaluvu,v,any,any,any,o,nwu_koVlY_u,nwu_koVlY_u' vbp=Y name=kalanwukkoVNtu poslcat=NM paradigm=v12>
+10.2	,	SYM	<fs af='&comma;,punc,,,,,,'>
+	))		
+11	((	NP	<fs af='saMxarBaM,n,n,sg,any,o,ni,E' vpos=vib2 head=cUlYYalE drel=k2:14 name=11 case_name=acc paradigm=n17>
+11.1		NN	<fs af='0,n,n,sg,any,d,,' case_name=nom paradigm=n6>
+11.2	paryAvaraNAnni	NN	<fs af='paryAvaraNaM,n,n,sg,any,o,ni,E' name=cUlYYalE case_name=acc paradigm=n17>
+	))		
+12	((	NP	<fs af='saMrakRiMcu,v,n,sg,3,o,e_lo,pp_awu_il' case_name=loc poslcat=NM ndrd=Y vpos=vib1 head=pAwukAppawil drel=k7:22 name=12 tense=FUTURE paradigm=v11>
+12.1	saMrakRiMcadAniki	NN	<fs af='saMrakRiMcu,v,n,sg,3,o,e_lo,pp_awu_il' name=pAwukAppawil tense=FUTURE case_name=loc poslcat=NM paradigm=v11 ndrd=Y>
+	))		
+13	((	NP	<fs af='viXAnaM,n,n,sg,any,o,lo,il' vpos=vib2 head=murYEyil drel=k7:22 name=13 case_name=loc paradigm=n2>
+13.1	goVppa	JJ	<fs af='goVppa,adj,,,,,,' paradigm=adj>
+13.2	viXAnaMlo	NN	<fs af='viXAnaM,n,n,sg,any,o,lo,il' name=murYEyil case_name=loc paradigm=n2>
+	))		
+14	((	VGNF	<fs af='pafkArYrYu,v,any,any,any,o,ina,i_a' head='pafkArYrYiya'  name='14'  tense='PAST'  paradigm='v5'  rp='Y'>
+14.1	pafkArYrYu	VM	<fs af='pafkArYrYu,v,any,any,any,o,ina,i_a' name=pafkArYrYiya tense=PAST paradigm=v5 rp=Y>
+	))		
+15	((	NP	<fs af='saMsXa,n,n,pl,any,d,0,kalY' head=nirYuvanYafkalY drel=k1:22 name=15 case_name=nom paradigm=n13>
+15.1	saMsXalu	NN	<fs af='saMsXa,n,n,pl,any,d,0,kalY' name=nirYuvanYafkalY case_name=nom paradigm=n13>
+	))		
+16	((	CCP	<fs af='mariyu,conj,n,sg,any,,,' head='marYrYum'  name='16'  paradigm='conj'  poslcat='NM'>
+16.1	mariyu	CC	<fs af='mariyu,avy,n,sg,any,,,'>
+	))		
+17	((	NP	<fs af='nabar,n,n,pl,any,o,ki,kalY_ukku' head=naparkalYukku vpos=vib2 drel=k4:22 name=17 case_name=dat paradigm=n17>
+17.1	praxyega	NN	<fs af='praxyega,n,n,sg,any,d,,' case_name=nom paradigm=n2>
+17.2	vyagxulaki	NN	<fs af='vyagxi,n,n,pl,any,o,ki,kalY_ukku' name=naparkalYukku case_name=dat paradigm=n17>
+17.3	‘	SYM	<fs af='&lsquo;,punc,,,,,,'>
+	))		
+18	((	NP	<fs af='iMxira,n,n,sg,any,d,,' head=inwirA name=18 case_name=nom paradigm=n1>
+18.1	iMxira	NNP	<fs af='iMxira,n,n,sg,any,d,,' name=inwirA case_name=nom paradigm=n1>
+	))		
+19	((	NP	<fs af='gAMXI,n,n,sg,any,d,,' head=kAnwi name=19 case_name=nom paradigm=n2>
+19.1	gAMXI	NNP	<fs af='gAMXI,n,n,sg,any,d,,' name=kAnwi case_name=nom paradigm=n2>
+	))		
+20	((	NP	<fs af='paryAvaran,n,n,sg,3,,0,0' head=paryAvaranY name=20 poslcat=NM>
+20.1	paryAvaran	NNP	<fs af='paryAvaran,n,n,sg,3,,0,0' name=paryAvaranY poslcat=NM>
+20.2	‘	SYM	<fs af='&lsquo;,punc,,,,,,'>
+	))		
+21	((	NP	<fs af='biruxu,n,n,pl,any,o,ni,kalY_E' vpos=vib1 head=viruwukalYE drel=k2:22 name=21 case_name=acc paradigm=n2>
+21.1	biruxulani	NN	<fs af='biruxu,n,n,pl,any,o,ni,kalY_E' name=viruwukalYE case_name=acc paradigm=n2>
+	))		
+22	((	VGF	<fs af='ivvu,v,mf,sg,3,o,A,inY_Ar' head='valYYafkinYAr'  name='22'  tense='PAST'  paradigm='v5'  finite='Y'>
+22.1	iccAru	VM	<fs af='ivvu,v,mf,sg,3,o,A,inY_Ar' name=valYYafkinYAr tense=PAST finite=Y paradigm=v5>
+22.2	.	SYM	<fs af='&dot;,punc,,,,,,'>
+	))		

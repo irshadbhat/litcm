@@ -1,0 +1,30 @@
+<Sentence id="1">
+1	((	NP	<fs af='kevalaM,n,,sg,,d,0,0' head="kevalaM" name=1>
+1.1	kevalaM	NN	<fs af='kevalaM,n,,sg,,d,0,0' name="kevalaM">
+	))		
+2	((	RBP	<fs af='hAyigA,avy,,,,,0,0_avy' head="hAyigA" name=2 poslcat="NM">
+2.1	hAyigA	RB	<fs af='hAyigA,avy,,,,,0,0_avy' poslcat="NM" name="hAyigA">
+	))		
+3	((	NP	<fs af='jIviwaM,n,,sg,,,nu,nu' head="jIviwAnni" vpos="vib1" name=3>
+3.1	jIviwAnni	NN	<fs af='jIviwaM,n,,sg,,,nu,nu' name="jIviwAnni">
+	))		
+4	((	VGNF	<fs af='gadapu,v,any,any,any,,adaM,adaM' head="gadapadaM" name=4>
+4.1	@kalYYi	VM	<fs af='^@kalYYi,v,any,any,any,,adaM,adaM' name="gadapadaM">
+	))		
+5	((	VGNF	<fs af='vaccu,v,any,any,any,,we,we' head="vaswe" name=5>
+5.1	^weVri	VM	<fs af='^@weVri,v,any,any,any,,we,we' name="vaswe">
+	))		
+6	((	VGNF	<fs af='cAlu,v,,sg,2,,AjFArWa,AjFArWa' head="cAlu" name=6>
+6.1	^@cAlu	VM	<fs af='@cAlu,v,,sg,2,,@AjFArWa,AjFArWa' name="cAlu">
+	))		
+7	((	VGNF	<fs af='anu,v,fm,pl,3,,wunn,wunn' head="aMtunnAru" name=7>
+7.1	aMtunnAru	VM	<fs af='anu,v,fm,pl,3,,wunn,wunn' name="aMtunnAru">
+	))		
+8	((	NP	<fs af='mAnasika,n,,sg,,d,0,0' head="mAnasika" name=8>
+8.1	manYowawwuva	NN	<fs af='^@manYowawwuva,n,,sg,,d,^@mA,0' name="mAnasika">
+	))		
+9	((	NP	<fs af='vExyanipuNudu,n,,pl,,d,0,0' head="vExyanipuNulu" name=9>
+9.1	vallunar	NN	<fs af='^@vallunar,n,,pl,,d,^kA,0' name="vExyanipuNulu">
+9.2	.	SYM	<fs af='&dot;,punc,,,,,,'>
+	))		
+</Sentence>

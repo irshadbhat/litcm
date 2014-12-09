@@ -1,0 +1,26 @@
+<Sentence id="1">			
+1	హైదరాబాద్	NNP	<fs af='హైదరాబాద్,n,,sg,,d,0,0'>|<fs af='హైదరాబాద్,n,,sg,,o,టి,ti'>
+2	లో	PSP	<fs af='లో,avy,,,,,,'>|<fs af='ల,avy,,,,,ఓ,o_avy'>
+3	గురు	NN	<fs af='గురువు,n,,sg,,,ఈ,I'>|<fs af='గురువు,n,,sg,,o,టి,ti'>
+4	,	SYM	<fs af=',,punc,,,,,'>
+5	శుక్రవారాల్లో	NN	<fs af='శుక్రవారం,n,,pl,,,లో,lo'>
+6	జస్టిస్	NN	<fs af='జస్టిస్,n,,sg,,d,0,0'>|<fs af='జస్టిస్,n,,sg,,o,టి,ti'>
+7	శ్రీకృష్ణ	NNP	<fs af='శ్రీకృష్ణ,n,,sg,,d,0,0'>|<fs af='శ్రీకృష్ణ,n,,sg,,o,టి,ti'>|<fs af='శ్రీకృష్ణుడు,n,,sg,,o,టి,ti'>
+8	కమిటీ	NN	<fs af='కమిటీ,n,,sg,,d,0,0'>|<fs af='కమిటీ,n,,sg,,d,0,0'>|<fs af='కమిటీ,n,,sg,,o,టి,ti'>|<fs af='కమిటీ,n,,sg,,o,టి,ti'>
+9	పర్యటన	NN	<fs af='పర్యటన,n,,sg,,d,0,0'>|<fs af='పర్యటన,n,,sg,,o,టి,ti'>|<fs af='పర్యటనం,n,,sg,,o,టి,ti'>
+10	కేవలం	NN	<fs af='కేవలం,n,,sg,,d,0,0'>|<fs af='కేవ,n,,pl,,d,ను,nu'>
+11	పరిచయానికి	VM	<fs af='పరిచయం,n,,sg,,,కి,ki'>
+12	,	SYM	<fs af=',,punc,,,,,'>
+13	అవగాహన	NN	<fs af='అవగాహన,n,,sg,,d,0,0'>|<fs af='అవగాహన,n,,sg,,o,టి,ti'>|<fs af='అవగాహనం,n,,sg,,o,టి,ti'>
+14	కోసం	PSP	<fs af='కోసం,avy,,,,,0,0_avy'>
+15	మాత్రమే	PSP	<fs af='మాత్రమే,avy,,,,,,'>|<fs af='మాత్రం,avy,,,,,ఏ,e_avy'>
+16	అని	UT	<fs af='అని,avy,,,,,0,0_avy'>|<fs af='అను,v,any,any,any,,ఇ,i'>
+17	కమిటీ	NN	<fs af='కమిటీ,n,,sg,,d,0,0'>|<fs af='కమిటీ,n,,sg,,d,0,0'>|<fs af='కమిటీ,n,,sg,,o,టి,ti'>|<fs af='కమిటీ,n,,sg,,o,టి,ti'>
+18	సభ్య	NN	<fs af='సభ్యం,n,,sg,,o,టి,ti'>|<fs af='సభ్యుడు,n,,sg,,o,టి,ti'>
+19	కార్యదర్శి	NN	<fs af='కార్యదర్శి,n,,sg,,d,0,0'>|<fs af='కార్యదర్శి,n,,sg,,o,టి,ti'>
+20	వినోద్	VM	<fs af='వినోద్,unk,,,,,,'>
+21	కె	NN	<fs af='కె,avy,,,,,0,0_avy'>
+22	దుగ్గల్	NN	<fs af='దుగ్గల్,unk,,,,,,'>
+23	తెలిపారు	VM	<fs af='తెలుపు,v,fm,pl,3,,ఆ,A'>
+24	।	SYM	<fs af='।,punc,,,,,,'>
+</Sentence>			

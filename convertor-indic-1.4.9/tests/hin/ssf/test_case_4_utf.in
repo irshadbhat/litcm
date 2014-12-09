@@ -1,0 +1,68 @@
+<Sentence id="3">			
+1	((	NP	
+1.1	यहाँ	PRP	<fs af='यहाँ,pn,,,,,,'>
+1.2	पर	PSP	<fs af='पर,psp,,,,,,'>
+	))		
+2	((	NP	
+2.1	ट्रस्ट	NN	<fs af='ट्रस्ट,n,m,sg,3,d,,'>
+2.2	के	PSP	<fs af='का,psp,m,sg,,o,,'>
+2.3	द्वारा	PSP	<fs af='द्वारा,psp,,,,,,'>
+	))		
+3	((	NP	
+3.1	यात्रियों	NN	<fs af='यात्री,n,m,pl,3,o,,'>
+3.2	की	PSP	<fs af='का,psp,f,sg,,d,,'>
+	))		
+4	((	NP	
+4.1	सुविधा	NN	<fs af='सुविधा,n,f,sg,3,d,,'>
+4.2	के	PSP	<fs af='का,psp,m,sg,,o,,'>
+4.3	लिए	PSP	<fs af='लिए,psp,,,,,,'>
+	))		
+5	((	NP	
+5.1	उनखटोला	NNP	<fs af='उनखटोला,n,m,sg,3,d,,'>
+	))		
+6	((	NP	
+6.1	(	SYM	<fs af='(,punc,,,,,,' poslcat="NM">
+6.2	रोप	XC	<fs af='रोप,unk,,,,,,' poslcat="NM">
+6.3	वे	NN	<fs af='वह,pn,any,pl,3,d,,' poslcat="NM">
+6.4	)	SYM	<fs af='),punc,,,,,,' poslcat="NM">
+	))		
+7	((	VGF	
+7.1	बनाया	VM	<fs af='बना,v,m,sg,any,,या,yA'>
+7.2	गया	VAUX	<fs af='जा,v,m,sg,any,,या,yA'>
+7.3	है	VAUX	<fs af='है,v,any,sg,2,,है,hE'>
+7.4	@ZCOMMA	SYM	<fs af='@ZCOMMA,punc,,,,,,' poslcat="NM">
+	))		
+8	((	NP	
+8.1	जिससे	PRP	<fs af='जो,pn,any,sg,3,o,से,'>
+	))		
+9	((	NP	
+9.1	दो	QC	<fs af='दो,num,any,any,,any,,'>
+9.2	जगहों	NN	<fs af='जगह,n,m,pl,3,o,,'>
+9.3	पर	PSP	<fs af='पर,psp,,,,,,'>
+9.4	((		
+	))	NP	
+9.5	यात्री	NN	<fs af='यात्री,n,m,sg,3,d,,'>
+	))		
+10	((	NP	
+10.1	कुछ	QF	<fs af='कुछ,adv,,,,,,'>
+10.2	समय	NN	<fs af='समय,n,m,sg,3,d,,'>
+10.3	में	PSP	<fs af='में,psp,,,,,,'>
+10.4	ही	RP	<fs af='ही,adv,,,,,,' poslcat="NM">
+	))		
+11	((	NP	
+11.1	माता	NNP	<fs af='माता,n,f,sg,3,d,,'>
+11.2	के	PSP	<fs af='का,psp,m,sg,,o,,'>
+	))		
+12	((	NP	
+12.1	दर्शन	NN	<fs af='दर्शन,n,m,sg,3,d,,'>
+	))		
+13	((	VGF	
+13.1	कर	VM	<fs af='कर,v,any,any,any,,0,0'>
+	))		
+14	((	VGF	
+14.1	लौट	VM	<fs af='लौट,v,any,any,any,,0,0'>
+14.2	सकते	VAUX	<fs af='सक,v,m,pl,any,,ता,wA'>
+14.3	हैं	VAUX	<fs af='है,v,any,pl,1,,है,hE'>
+14.4	।	SYM	<fs af='।,punc,,,,,,' poslcat="NM">
+	))		
+</Sentence>			
