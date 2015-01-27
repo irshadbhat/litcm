@@ -1,12 +1,12 @@
 Loading statistics:
-user	0
-sys	3.089e-06
-rss     5672 kB
+user	2.659e-06
+sys	0
+rss     5676 kB
 After queries:
-user	0
-sys	3.505e-06
-rss     5672 kB
+user	3.056e-06
+sys	0
+rss     5676 kB
 Total time including destruction:
-user	0
-sys	3.667e-06
+user	3.361e-06
+sys	0
 rss     1224 kB

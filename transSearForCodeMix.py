@@ -8,6 +8,7 @@ import sys
 import re, os
 import enchant
 import commands
+import numpy as np
 import cPickle as pic
 from math import log10
 import indicConvertor as st
@@ -117,8 +118,8 @@ if __name__ == "__main__":
     2. One of the Indian language tags:	[hin, ben, guj, mal, tam, kan]
     """
     parser = argparse.ArgumentParser(description="Language Identification & Transliteration of Indic-words!")
-    parser.add_argument('--file' , dest='input', required=True  , help='Input code-mixed data file')
-    parser.add_argument('--tag' , dest='tag', required=True  , help='One of the following tags: [hin, ben, guj, mal, tam, kan]')
+    parser.add_argument('-f' , dest='input', required=True  , help='Input code-mixed data file')
+    parser.add_argument('-t' , dest='tag', required=True  , help='One of the following tags: [hin, ben, guj, mal, tam, kan]')
 
     args = parser.parse_args()
 
