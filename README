@@ -38,7 +38,7 @@ Preprocessing:
 
 How to use ??
 
-python --file inputfile --tag hin|ben|kan|mal|tam|guj
+python transSearForCodeMix.py --file inputfile --tag hin|ben|kan|mal|tam|guj
 
 
 Contact :
