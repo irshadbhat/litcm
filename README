@@ -31,9 +31,9 @@ Preprocessing:
 
 	    e.g.
 	    
-	    ======================================================================================================
-	    export convertorIndic="/home/irshad/Language-Identification-and-Transliteration/convertor-indic-1.4.9"    
-	    ======================================================================================================
+	    ===============================================================
+	    export convertorIndic="/home/irshad/LIT/convertor-indic-1.4.9"    
+	    ===============================================================
 
 
 How to use ??
@@ -43,6 +43,6 @@ python transSearForCodeMix.py --file inputfile --tag hin|ben|kan|mal|tam|guj
 
 Contact :
 Irshad Ahmad Bhat
-Inturn IIITH, Hyderabad
+Intern IIITH, Hyderabad
 bhatirshad127@gmail.com
 
