@@ -1,11 +1,6 @@
 Language Identification and Transliteration (LI&T): 
 
-This tool is used for language identification and transliteration of Indic-words 
-in code-mixed data. This tool is meant for seven Indian languages; Hindi, Bengali, 
-Kanadda, Tamil, Malayalam and Gujrati code mixed with English. The input file 
-should contain text in only two languages, English and any of the above mentioned 
-Indian languages. It is necessary to mention the Indian language used in the code-
-mixed data by passing an argument after the input file as shown below. 
+This tool is used for language identification and transliteration of Indic-words in code-mixed data. This tool is meant for seven Indian languages; Hindi, Bengali, Kanadda, Tamil, Malayalam and Gujrati code mixed with English. The input file should contain text in only two languages, English and any of the above mentioned Indian languages. It is necessary to mention the Indian language used in the code-mixed data by passing an argument after the input file as shown below. 
 
 Requirements:
 
@@ -20,8 +15,7 @@ Preprocessing:
 	    gunzip blm_models/*
 	    ====================
 
-2.  Move to convertor-indic-1.4.9 directory and copy its path using pwd command to 
-    the .bashrc file as shown below:
+2.  Move to convertor-indic-1.4.9 directory and copy its path using pwd command to the .bashrc file as shown below:
 
 	    ============================
 	    export convertorIndic="path"    
