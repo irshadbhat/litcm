@@ -7,10 +7,6 @@ should contain text in only two languages, English and any of the above mentione
 Indian languages. It is necessary to mention the Indian language used in the code-
 mixed data by passing an argument after the input file as shown below. 
 
-Dependencies
-
-scikit-learn is tested to work under Python 2.7, and Python 3.4. 
-
 Requirements:
 
 kenlm. Can be installed from 'https://github.com/kpu/kenlm'
@@ -18,7 +14,13 @@ numpy. Can be installed via 'sudo apt-get install python-numpy'
 
 Preprocessing:
 
-1.  Move to convertor-indic-1.4.9 directory and copy its path using pwd command to 
+1.  Unzip all files in blm_models directory using the following command:
+
+	    ====================
+	    gunzip blm_models/*
+	    ====================
+
+2.  Move to convertor-indic-1.4.9 directory and copy its path using pwd command to 
     the .bashrc file as shown below:
 
 	    ============================
