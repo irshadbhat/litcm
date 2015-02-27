@@ -30,7 +30,7 @@ Preprocessing:
 
 How to use ??
 
-python lang_idf_tran.py --f inputfile --t hin|ban|kan|mal|tam|guj|tel -o T[optional]
+python lang_idf_tran.py -f inputfile -t hin|ban|kan|mal|tam|guj|tel -o T[optional]
 
 Third argument -o is optional. Set the argument to T to skip transliteration
 
