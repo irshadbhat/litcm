@@ -1,4 +1,4 @@
-# Language Identification and Transliteration (LI&T): 
+# Language Identification and Transliteration (LIT): 
 
 This tool is used for language identification and transliteration of Indic-words in code-mixed data. 
 
@@ -17,7 +17,7 @@ It is necessary to mention the Indian language used in the code-mixed data by pa
 
     1.  Unzip all files in blm_models directory using the following command:
 
-	gunzip blm_models/*
+	    gunzip blm_models/*
 
     2.  Move to convertor-indic-1.4.9 directory and copy its path using pwd command to the .bashrc file as shown below:
 
@@ -34,8 +34,12 @@ It is necessary to mention the Indian language used in the code-mixed data by pa
 
 
 Contact :
+
 Irshad Ahmad Bhat
+
 MS-CSE IIITH, Hyderabad
+
 bhatirshad127@gmail.com
+
 irshad.bhat@research.iiit.ac.in
 
