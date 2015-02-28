@@ -33,13 +33,10 @@ It is necessary to mention the Indian language used in the code-mixed data by pa
     Third argument -o is optional. Set the argument to T to skip transliteration\
 
 
-Contact :
+## Contact:
 
-Irshad Ahmad Bhat
-
-MS-CSE IIITH, Hyderabad
-
-bhatirshad127@gmail.com
-
-irshad.bhat@research.iiit.ac.in
+    Irshad Ahmad Bhat
+    MS-CSE IIITH, Hyderabad
+    bhatirshad127@gmail.com
+    irshad.bhat@research.iiit.ac.in
 
