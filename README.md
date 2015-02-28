@@ -30,7 +30,7 @@ It is necessary to mention the Indian language used in the code-mixed data by pa
 
     python lang_idf_tran.py -f inputfile -t hin|ban|kan|mal|tam|guj|tel -o[optional] T
 
-    Third argument -o is optional. Set the argument to T to skip transliteration\
+    Third argument -o is optional. Set the argument to T to skip transliteration
 
 
 ## Contact:
