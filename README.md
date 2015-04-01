@@ -30,7 +30,12 @@ It is not necessary to mention the languages used in the code-mixed data but if 
 
     python lang_idf_tran.py -f inputfile -t 'tel tam hin' -o[optional] T
 
-    Second (-t) and Third (-o) arguments are optional. Pass second agrument if there is a prior knowledge that only certain languages are present in the text. The languages passed should be from the set of given eight languages i.e., {hin, ban, guj, tam, mal, kan, tel, eng}, enclosed in quotes and each language seperated by a space. Set the third argument to T to include transliteration of Indic words to their native scripts.
+Second argument (-t) is optional and is a subset of {hin, ban, guj, tam, mal, kan, tel, eng}.
+
+Pass second agrument if there is a prior knowledge that only certain languages are present in the text. The languages passed should be from the given set of eight languages, enclosed in quotes and each language seperated by a space as shown. 
+
+Third (-o) arguments is also optional. Set the third argument to T to include transliteration of Indic words to their native scripts as well.
+
 
 
 ## Contact:
