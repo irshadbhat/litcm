@@ -2,11 +2,11 @@
 
 This tool is used for language identification and transliteration of Indic-words in code-mixed data. 
 
-The tool is meant for seven Indian languages; Hindi, Bengali, Kanadda, Tamil, Malayalam and Gujrati code mixed with English. 
+The tool is meant for seven Indian languages; Hindi, Bengali, Kanadda, Tamil, Malayalam, Telegu and Gujrati code mixed with each other or with English.  
 
-The input file should contain text in only two languages, English and any of the above mentioned Indian languages. 
+The input file should contain text Roman script in any of the above eight languages. 
 
-It is necessary to mention the Indian language used in the code-mixed data by passing an argument after the input file as shown below. 
+It is not necessary to mention the languages used in the code-mixed data but if it is known that not all the languages are present in the code-mixed text then it is better to pass an argument to the script mentioning only those languages that are present in the code-mixed text as shown below in Usage section. Note that if none of the languages are passed, then by default the script assumes that all the above eight languages are present in the text, and predicts words accordingly.
 
 ## Requirements:
 
@@ -28,9 +28,9 @@ It is necessary to mention the Indian language used in the code-mixed data by pa
 
 ### How to use ??
 
-    python lang_idf_tran.py -f inputfile -t hin|ban|kan|mal|tam|guj|tel -o[optional] T
+    python lang_idf_tran.py -f inputfile -t 'tel tam hin' -o[optional] T
 
-    Third argument -o is optional. Set the argument to T to skip transliteration
+    Second (-t) and Third (-o) arguments are optional. Pass second agrument if there is a prior knowledge that only certain languages are present in the text. The languages passed should be from the set of given eight languages i.e., {hin, ban, guj, tam, mal, kan, tel, eng}, enclosed in quotes and each language seperated by a space. Set the third argument to T to include transliteration of Indic words to their native scripts.
 
 
 ## Contact:

@@ -37,21 +37,38 @@ class LIT():
     probabilities obtained from the language models.
     """
 
-    def __init__(self, fp):
+    def __init__(self, fp, labels):
 	
 	self.fp = fp
+	self.labels = labels
 	self.tree = np.load('decision_tree_clf/toWX.npy')[0]
 
 	self.queue = list()
 	self.reg = re.compile(r"(^[^a-zA-Z0-9]+|[^-'a-zA-Z0-9]+|[^a-zA-Z0-9]+$)")
 
-	# load language-models
-        self.blm_eng_wp = kenlm.LanguageModel('blm_models/eng.tk.blm')
-        self.blm_eng_sp = kenlm.LanguageModel('blm_models/eng.ts.blm')
-        self.blm_ind_wp = kenlm.LanguageModel('blm_models/{}.tk.blm'.format(args.tag))
-        self.blm_ind_sp = kenlm.LanguageModel('blm_models/{}.ts.blm'.format(args.tag))
+	self.blm_wp = list()
+	self.blm_sp = list()
 
-    def transliterate(self, word):
+	# load language-models
+	for tag in self.labels:
+	    self.blm_wp.append(kenlm.LanguageModel('blm_models/{}.tk.blm'.format(tag)))
+	    self.blm_sp.append(kenlm.LanguageModel('blm_models/{}.ts.blm'.format(tag)))
+
+    def mapper(self, word, output):
+        bases={
+        'hindi':2304,
+        'bengali':2432,
+        'gujrati':2688,
+        'kannada':3200,
+        'punjabi':2560,
+        'telugu':3072,
+        'tamil':2944,
+        'malayalam':3328
+        }
+        return "".join([unichr(ord(letter)-bases['hindi'] + bases[output]) \
+                    for letter in list(word.decode("utf-8"))]).encode("utf-8")
+
+    def transliterate(self, word, tag):
 
 	"""
     	Transliterate words predicted as Indic-words to their native
@@ -63,21 +80,21 @@ class LIT():
     	toWx = re.sub("_","",toWx)
 
 	# convert WX to native scripts
-    	if args.tag == "guj":
-    	    unicodeString = cm.getoutput("echo"+" "+toWx+" | \
-    	    bash "+" "+"$convertorIndic/wx2utf_run.sh text hin 2> /dev/null")
-    	    print word+"\G="+mapper(unicodeString, "gujrati"),
+    	if tag == "guj":
+    	    unicodeString = cm.getoutput("echo" + " " + toWx + " | \
+    	    bash " + " " + "$convertorIndic/wx2utf_run.sh text hin 2> /dev/null")
+    	    print word+"\Guj=" + self.mapper(unicodeString, "gujrati"),
     	else:
-    	    unicodeString = cm.getoutput("echo"+" "+toWx+" "+" | \
-    	    bash "+" "+"$convertorIndic/wx2utf_run.sh text " + " " + args.tag +" "+"2> /dev/null")
-    	    print word+"\\"+args.tag[0].upper()+"="+unicodeString,
+    	    unicodeString = cm.getoutput("echo" + " " + toWx + " " + " | \
+    	    bash " + " " + "$convertorIndic/wx2utf_run.sh text " + " " + tag + " " + "2> /dev/null")
+    	    print word + "\\" + tag[0:3].title() + "=" + unicodeString,
 
     def print_queue(self, i):
 
 	"""Assign \O (other) tag to all strings in queue"""
 	while self.queue:
 	    if self.queue[0][1] == i:
-		print self.queue.pop(0)[0]+'\O',
+		print self.queue.pop(0)[0] + '\O',
 	    else:
 		break
     	
@@ -88,21 +105,26 @@ class LIT():
 	linear combination of these scores to predict language tags
 	"""
 	# compute character level and word level language probabilities
-	wp_eng = self.blm_eng_wp.score(' '.join(word))
-	sp_eng = self.blm_eng_sp.score(sen)
-	wp_ind = self.blm_ind_wp.score(' '.join(word.lower()))
-	sp_ind = self.blm_ind_sp.score(sen.lower())
+	lang_probability = list()
+	for i,tag in enumerate(self.labels):
+	    if tag == 'eng':
+		word_probability = self.blm_wp[i].score(' '.join(word))
+		sen_probability = self.blm_sp[i].score(sen)
+	    else:
+		word_probability = self.blm_wp[i].score(' '.join(word.lower()))
+		sen_probability = self.blm_sp[i].score(sen.lower())
+	    lang_probability.append(word_probability + sen_probability)
 
-	# take linear combination of obtained probabilities to make a decision rule 
-	lang1 = wp_eng + sp_eng
-	lang2 = wp_ind + sp_ind	
-	if lang1 > lang2:
-	    print "{}\E".format(word),
+	# find tag with highest probability 
+	idx = np.argmax(lang_probability)
+	tag = self.labels[idx]
+	if tag=='eng':
+	    print "{}\Eng".format(word),
 	else:
 	    if args.flag == 'T':
-		print "{}\{}".format(word,args.tag[0].upper()),
+		self.transliterate(word, tag)
 	    else:
-		self.transliterate(word)
+		print "{}\{}".format(word,tag[0:3].title()),
 	    
     def predict(self, word_list):
 
@@ -189,14 +211,21 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Language Identification in Code-Mixing")
     parser.add_argument('-f', dest='file_', required=True, help='Input code-mixed file')
-    parser.add_argument('-t', dest='tag', required=True, help='One of the following tags: \
-							[hin, ban, guj, mal, tam, kan, tel]')
+    parser.add_argument('-t', dest='tag',  help='Any space seperated tag combinations in quotes \
+						    from the list: [ban, eng, guj, hin, kan, mal, \
+						    tam, tel] e.g \'hin eng tel\'')
     parser.add_argument('-o', dest='flag', help="set this to 'T' to skip transliteration")
 
     args = parser.parse_args()
+    labels = ['ban', 'eng', 'guj', 'hin', 'kan', 'mal', 'tam', 'tel']
+
+    if args.tag:
+	labels = args.tag.split()
+	assert len(labels) >= 2
+	labels = [tag.lower() for tag in args.tag.split()]
 
     with open(args.file_) as fp:
-	idf = LIT(fp)
+	idf = LIT(fp, labels)
 	idf.identify()
     
 
