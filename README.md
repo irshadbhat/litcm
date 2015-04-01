@@ -2,7 +2,7 @@
 
 This tool is used for language identification and transliteration of Indic-words in code-mixed data. 
 
-The tool is meant for seven Indian languages; Hindi, Bengali, Kanadda, Tamil, Malayalam, Telegu and Gujrati code mixed with each other or with English.  
+The tool is meant for seven Indian languages; Hindi, Bengali, Kanadda, Tamil, Malayalam, Telegu and Gujrati and English code mixed with each other.  
 
 The input file should contain text Roman script in any of the above eight languages. 
 
