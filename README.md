@@ -28,7 +28,7 @@ It is not necessary to mention the languages used in the code-mixed data but if 
 
 ### How to use ??
 
-    python lang_idf_tran.py -f inputfile -t 'tel tam hin' -o[optional] T
+    python lang_idf_tran.py -f inputfile -t[optional] 'tel tam hin' -o[optional] T
 
 Second argument (-t) is optional and is a subset of eight language tags; {hin, ban, guj, tam, mal, kan, tel, eng}.
 
