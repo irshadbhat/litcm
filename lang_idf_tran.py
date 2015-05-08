@@ -214,7 +214,7 @@ if __name__ == "__main__":
     parser.add_argument('-t', dest='tag',  help='Any space seperated tag combinations in quotes \
 						    from the list: [ban, eng, guj, hin, kan, mal, \
 						    tam, tel] e.g \'hin eng tel\'')
-    parser.add_argument('-o', dest='flag', help="set this to 'T' to skip transliteration")
+    parser.add_argument('-o', dest='flag', help="set this to 'T' for back-transliteration")
 
     args = parser.parse_args()
     labels = ['ban', 'eng', 'guj', 'hin', 'kan', 'mal', 'tam', 'tel']
