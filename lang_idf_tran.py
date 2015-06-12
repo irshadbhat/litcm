@@ -13,6 +13,7 @@ import re
 import json
 import argparse
 import commands as cm
+import unicodedata as ud
 
 import kenlm
 import numpy as np
@@ -60,8 +61,8 @@ class LIT():
 	    self.blm_wp.append(kenlm.LanguageModel('blm_models/{}.tk.blm'.format(tag)))
 	    self.blm_sp.append(kenlm.LanguageModel('blm_models/{}.ts.blm'.format(tag)))
 
-	self.kan_null = [3312, 3315, 3252, 3316, 3317, 3287, 3273, 3321,
-			3258, 3322, 3323, 3324, 3325, 3278, 3326, 3327]
+	#self.kan_null = [3312, 3315, 3252, 3316, 3317, 3287, 3273, 3321,
+	#		3258, 3322, 3323, 3324, 3325, 3278, 3326, 3327]
 	self.reg = re.compile(r"(^[^a-zA-Z0-9]+|[^-'a-zA-Z0-9]+|[^a-zA-Z0-9]+$)")
 
     def mapper(self, word, ip_tag, op_tag):
@@ -75,10 +76,12 @@ class LIT():
         'kannada'   :   3200,
         'malayalam' :   3328
         }
-	map_string = "".join([unichr(ord(letter)-bases[op_tag] + bases[ip_tag]) \
-			for letter in list(word.decode("utf-8")) if ord(letter) in \
-			range(3328, 3456)])
-	return "".join([ch if ord(ch) not in self.kan_null else "" for ch in list(map_string)])
+	map_string = [unichr(ord(letter)-bases[op_tag] + bases[ip_tag]) \
+			if ord(letter) in range(3328, 3456) else letter \
+			for letter in list(word.decode("utf-8"))] 
+	    
+	#return "".join([ch if ord(ch) not in self.kan_null else "" for ch in list(map_string)])
+	return "".join([ch for ch in map_string if ud.category(unichr(ord(ch))) != "Cn"])
 
     def transliterate(self, word, tag):
 	"""Transliterate words predicted as Indic-words to their native
