@@ -227,7 +227,11 @@ if __name__ == "__main__":
     parser.add_argument('--t', dest='tag',  help='Any space seperated tag combinations in quotes \
 						    from the list: [ban, eng, guj, hin, kan, mal, \
 						    tam, tel] e.g \'hin eng tel\'')
+<<<<<<< HEAD
     parser.add_argument('--o', dest='flag', help="set this to 'T' for back-transliteration")
+=======
+    parser.add_argument('-o', dest='flag', help="set this to 'T' for back-transliteration")
+>>>>>>> 84c513161796e524c991997259d7b9dfd8ebf248
 
     args = parser.parse_args()
     lang_tags = ['ban', 'eng', 'guj', 'hin', 'kan', 'mal', 'tam', 'tel']
