@@ -5,4 +5,4 @@ then
         echo -e "e.g.:\nsh $0 ssf hin input-file-name";
 exit
 fi
-perl -C $convertorIndic/convertor_indic.pl -f=$1 -l=$2 -s=wx -t=utf -i=$3
+perl -C convertor_indic.pl -f=$1 -l=$2 -s=wx -t=utf -i=$3

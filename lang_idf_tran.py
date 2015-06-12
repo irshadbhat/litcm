@@ -10,6 +10,7 @@ viz Bengali, Gujarati, Hindi, Malayalam, Tamil, Telegu and Kannada.
 """
 
 import re
+import json
 import argparse
 import commands as cm
 
@@ -41,53 +42,65 @@ class LIT():
 	
 	self.fp = fp
 	self.labels = labels
-	self.tree = np.load('decision_tree_clf/toWX.npy')[0]
+	self.tag_dct = {tag:i for i,tag in enumerate(labels)}
+	self.tree, self.queue, self.blm_wp, self.blm_sp = list(), list(), list(), list()
 
-	self.queue = list()
-	self.reg = re.compile(r"(^[^a-zA-Z0-9]+|[^-'a-zA-Z0-9]+|[^a-zA-Z0-9]+$)")
-
-	self.blm_wp = list()
-	self.blm_sp = list()
+	# load decision trees
+	for tag in self.labels:
+	    if tag == "eng": 
+		self.tree.append("_")
+		continue
+	    if tag == "kan":
+		tag = "mal"
+	    with open('decision_trees/eng-%s.json' %tag) as fp:
+    		self.tree.append(json.load(fp))
 
 	# load language-models
 	for tag in self.labels:
 	    self.blm_wp.append(kenlm.LanguageModel('blm_models/{}.tk.blm'.format(tag)))
 	    self.blm_sp.append(kenlm.LanguageModel('blm_models/{}.ts.blm'.format(tag)))
 
-    def mapper(self, word, output):
+	self.kan_null = [3312, 3315, 3252, 3316, 3317, 3287, 3273, 3321,
+			3258, 3322, 3323, 3324, 3325, 3278, 3326, 3327]
+	self.reg = re.compile(r"(^[^a-zA-Z0-9]+|[^-'a-zA-Z0-9]+|[^a-zA-Z0-9]+$)")
+
+    def mapper(self, word, ip_tag, op_tag):
         bases={
-        'hindi':2304,
-        'bengali':2432,
-        'gujrati':2688,
-        'kannada':3200,
-        'punjabi':2560,
-        'telugu':3072,
-        'tamil':2944,
-        'malayalam':3328
+        'hindi'     :   2304,
+        'tamil'     :   2944,
+        'telugu'    :   3072,
+        'bengali'   :   2432,
+        'gujrati'   :   2688,
+        'punjabi'   :   2560,
+        'kannada'   :   3200,
+        'malayalam' :   3328
         }
-        return "".join([unichr(ord(letter)-bases['hindi'] + bases[output]) \
-                    for letter in list(word.decode("utf-8"))]).encode("utf-8")
+	map_string = "".join([unichr(ord(letter)-bases[op_tag] + bases[ip_tag]) \
+			for letter in list(word.decode("utf-8")) if ord(letter) in \
+			range(3328, 3456)])
+	return "".join([ch if ord(ch) not in self.kan_null else "" for ch in list(map_string)])
 
     def transliterate(self, word, tag):
-
-	"""
-    	Transliterate words predicted as Indic-words to their native
-	scripts using 'ind_trans.py' script and Indic-convertor tool-kit
-    	"""
+	"""Transliterate words predicted as Indic-words to their native
+	scripts using 'ind_trans.py' script and Indic-convertor tool-kit"""
 	
 	# transliterate to WX
-	toWx = tn.RomanConvertor(self.tree, word).predict()
-    	toWx = re.sub("_","",toWx)
-
+	wx = tn.RomanConvertor(self.tree[self.tag_dct[tag]], word, tag).predict()
+	
+	if tag == 'guj':
+	    print "%s\\%s=%s" %(word, tag.title(), wx),
+	    return
+	
+	if tag == "kan":
+	    unicodeString = cm.getoutput("echo %s | bash $convertorIndic/wx2utf_run.sh \
+						    text %s 2> /dev/null" %(wx, "mal"))
+	    print "%s\\Kan=%s" %(word, self.mapper(unicodeString, "kannada", "malayalam")), 
+	    return
+	    	
 	# convert WX to native scripts
-    	if tag == "guj":
-    	    unicodeString = cm.getoutput("echo" + " " + toWx + " | \
-    	    bash " + " " + "$convertorIndic/wx2utf_run.sh text hin 2> /dev/null")
-    	    print word+"\Guj=" + self.mapper(unicodeString, "gujrati"),
-    	else:
-    	    unicodeString = cm.getoutput("echo" + " " + toWx + " " + " | \
-    	    bash " + " " + "$convertorIndic/wx2utf_run.sh text " + " " + tag + " " + "2> /dev/null")
-    	    print word + "\\" + tag[0:3].title() + "=" + unicodeString,
+    	unicodeString = cm.getoutput("echo %s | bash $convertorIndic/wx2utf_run.sh \
+						    text %s 2> /dev/null" %(wx, tag))
+    	print "%s\\%s=%s" %(word, tag.title(), unicodeString), 
 
     def print_queue(self, i):
 
@@ -124,7 +137,7 @@ class LIT():
 	    if args.flag == 'T':
 		self.transliterate(word, tag)
 	    else:
-		print "{}\{}".format(word,tag[0:3].title()),
+		print "{}\{}".format(word,tag.title()),
 	    
     def predict(self, word_list):
 
@@ -176,7 +189,7 @@ class LIT():
 		self.print_queue(i)
                 self.check(cur_word, sen)
 
-	# last 2 words of a sentence
+	# NOTE last 2 words of a sentence
 	for j in range(1,3):
 	    if tri_gram[j]:
 		i+=1
@@ -210,19 +223,22 @@ if __name__ == "__main__":
     """
 
     parser = argparse.ArgumentParser(description="Language Identification in Code-Mixing")
-    parser.add_argument('-f', dest='file_', required=True, help='Input code-mixed file')
-    parser.add_argument('-t', dest='tag',  help='Any space seperated tag combinations in quotes \
+    parser.add_argument('--f', dest='file_', required=True, help='Input code-mixed file')
+    parser.add_argument('--t', dest='tag',  help='Any space seperated tag combinations in quotes \
 						    from the list: [ban, eng, guj, hin, kan, mal, \
 						    tam, tel] e.g \'hin eng tel\'')
-    parser.add_argument('-o', dest='flag', help="set this to 'T' to skip transliteration")
+    parser.add_argument('--o', dest='flag', help="set this to 'T' for back-transliteration")
 
     args = parser.parse_args()
-    labels = ['ban', 'eng', 'guj', 'hin', 'kan', 'mal', 'tam', 'tel']
+    lang_tags = ['ban', 'eng', 'guj', 'hin', 'kan', 'mal', 'tam', 'tel']
 
     if args.tag:
 	labels = args.tag.split()
-	assert len(labels) >= 2
 	labels = [tag.lower() for tag in args.tag.split()]
+	assert len(labels) >= 2
+	assert set(labels).issubset(set(lang_tags))
+    else:
+	labels = lang_tags
 
     with open(args.file_) as fp:
 	idf = LIT(fp, labels)
