@@ -63,6 +63,10 @@ class LIT():
 
 	#self.kan_null = [3312, 3315, 3252, 3316, 3317, 3287, 3273, 3321,
 	#		3258, 3322, 3323, 3324, 3325, 3278, 3326, 3327]
+	# load emoticon set
+	with open('extras/emoticons.txt') as fp:
+	    self.emoticons = set(fp.read().split('\t'))
+
 	self.reg = re.compile(r"(^[^a-zA-Z0-9]+|[^-'a-zA-Z0-9]+|[^a-zA-Z0-9]+$)")
 
     def mapper(self, word, ip_tag, op_tag):
@@ -155,7 +159,12 @@ class LIT():
         for word in word_list:
             if not word:
                 continue
-
+	    if word in self.emoticons:
+		print
+		print
+		print "%s\\EMT" %word
+		print
+		continue
             # label words that doesn't contain any alphabet with \O tag                     
             if not re.search(r'[a-zA-Z]',word):
 		step  = len(' '.join(tri_gram).split())
@@ -164,10 +173,8 @@ class LIT():
 		    continue
 		self.queue.append((word, i+3))
 		continue
-
             # split leading and trailing non-alphabetic characters of a word
             words = re.sub(self.reg, r' \1 ', word).split()
-
             for word in words:
                 # label words that doesn't contain any alphabet with \O tag                 
                 if not re.search(r'[a-zA-Z]',word):
@@ -177,7 +184,6 @@ class LIT():
 			continue
 		    self.queue.append((word, i+3))
 		    continue
-
                 # record context of word (3-gram)
                 if i < 2:
                     i+=1
@@ -188,7 +194,6 @@ class LIT():
                 tri_gram[:2] = tri_gram[1:3]
                 tri_gram[-1] = word
 		i+=1
-
 		self.print_queue(i)
                 self.check(cur_word, sen)
 
@@ -210,7 +215,7 @@ class LIT():
 	    if not line:
 		print
 		continue
-	    sentences = re.sub(r'([.?]\s*)([A-Z])', r'\1\n\2', line).split('\n')
+	    sentences = re.sub(r'([.?]\s\s*)([A-Z0-9])', r'\1\n\2', line).split('\n')
 	    for sen in sentences:
 		words = sen.split()
 		self.predict(words)
