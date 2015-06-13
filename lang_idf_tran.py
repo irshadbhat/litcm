@@ -160,10 +160,7 @@ class LIT():
             if not word:
                 continue
 	    if word in self.emoticons:
-		print
-		print
-		print "%s\\EMT" %word
-		print
+		print "%s\\EMT" %word,
 		continue
             # label words that doesn't contain any alphabet with \O tag                     
             if not re.search(r'[a-zA-Z]',word):
