@@ -222,9 +222,10 @@ if __name__ == "__main__":
 
     """
     Program entry point. 
-    Script takes two arguments:
+    Script takes three arguments:
     1. Code-mixed text file 
-    2. One of the Indian language tags: [hin, ban, guj, mal, tam, kan, tel]
+    2. Language tags (Optional): [hin, ban, guj, mal, tam, kan, tel]
+    3. Transliteration flag (Optional)
     """
 
     parser = argparse.ArgumentParser(description="Language Identification in Code-Mixing")
@@ -233,7 +234,6 @@ if __name__ == "__main__":
 						    from the list: [ban, eng, guj, hin, kan, mal, \
 						    tam, tel] e.g \'hin eng tel\'')
     parser.add_argument('--o', dest='flag', help="set this to 'T' for back-transliteration")
-    parser.add_argument('-o', dest='flag', help="set this to 'T' for back-transliteration")
 
     args = parser.parse_args()
     lang_tags = ['ban', 'eng', 'guj', 'hin', 'kan', 'mal', 'tam', 'tel']
