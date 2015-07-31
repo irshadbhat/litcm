@@ -2,11 +2,11 @@
 
 This tool is used for language identification and transliteration of Indic-words in code-mixed data. 
 
-The tool is meant for English and seven Indian languages; Hindi, Bengali, Kanadda, Tamil, Malayalam, Telegu and Gujrati, code mixed with each other.  
+The tool is meant for English and seven Indian languages viz. Hindi, Bengali, Kanadda, Tamil, Malayalam, Telegu and Gujrati, code mixed with each other.  
 
-The input file should contain Roman text in any of the above eight languages. 
+The input file can have words in any of the above mentioned languages in Roman script.
 
-It is not necessary to mention the languages used in the code-mixed data but if it is known that not all the languages are present in the code-mixed text, it is better to pass an argument to the script mentioning only those languages that are present in the code-mixed text as shown below in Usage section. Note that if none of the languages are passed, then by default the script assumes that all the above eight languages are present in the text, and predicts words accordingly.
+It is not necessary to mention the languages used in the code-mixed data but if it is known that all the languages are not present in the code-mixed text, it is better to pass an argument to the script mentioning only those languages that are present in the code-mixed text as shown below in Usage section. Note that if none of the languages are passed, then by default the script assumes that all the above eight languages are present in the text, and predicts words accordingly.
 
 ## Requirements:
 
@@ -19,22 +19,15 @@ It is not necessary to mention the languages used in the code-mixed data but if 
 
 	    gunzip blm_models/*
 
-    2.  Move to convertor-indic-1.4.9 directory and copy its path using pwd command to the .bashrc file as shown below:
-
-	    export convertorIndic="path"    
-	    e.g.
-	    export convertorIndic="/home/irshad/LIT/convertor-indic-1.4.9"    
-
-
 ### How to use ??
 
-    python lang_idf_tran.py -f inputfile -t[optional] 'tel tam hin' -o[optional] T
+    python lang_idf_tran.py --i inputfile --o[optional] outputfile -l[optional] 'hin tel eng' -t[optional] T
 
-Second argument (-t) is optional and is a subset of eight language tags; {hin, ban, guj, tam, mal, kan, tel, eng}.
+Language argument (-l) is optional and is a subset of eight language tags; {hin, ban, guj, tam, mal, kan, tel, eng}.
 
-Pass second agrument if there is a prior knowledge that only certain languages are present in the text. The languages passed should be from the given set of eight languages, enclosed in quotes and each language tag seperated by a space as shown. 
+Pass language agrument if there is a prior knowledge that only certain languages are present in the text. The languages passed should be from the given set of eight languages, enclosed in quotes and each language tag seperated by a space as shown. 
 
-Third (-o) arguments is also optional. Set the third argument to T to include transliteration of Indic words to their native scripts as well.
+Transliteration arguments (-t) is also optional. Set this argument to T to back transliterate identified Indic words to their native scripts.
 
 
 

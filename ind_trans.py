@@ -53,7 +53,7 @@ class RomanConvertor():
 	list and passes the list to 'find' function. 
 	"""
 	p1 = p2 = p3 ="_"
-	data_point = []
+	data_point = list()
 	for i in range(len(self.input_)):
 	    if not self.input_[i].isalpha():
 	    	self.transliterated_ += self.input_[i]
@@ -72,10 +72,8 @@ class RomanConvertor():
 	    except IndexError, e:
 		data_point.append("_")
 	    self.find(data_point, self.tree_)
-	    p1 = p2
-	    p2 = p3
-	    p3 = self.input_[i]
-	    data_point=[]
+	    p1, p2, p3 = p2, p3, self.input_[i]
+	    data_point = list()
 	
 	self.transliterated_ = self.transliterated_.replace("_", "")
 	

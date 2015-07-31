@@ -2,32 +2,35 @@
 #!-*- coding: utf-8 -*-
 
 """
-Language Identifiaction Tool
+Language Identifiaction and Transliteration Tool
 
 A token level language identification and transliteration tool in 
-code-mixed queries in English and any of the given 7 Indian languages 
-viz Bengali, Gujarati, Hindi, Malayalam, Tamil, Telegu and Kannada.
+code-mixed queries in English and any of the following Indian languages 
+viz. Bengali, Gujarati, Hindi, Malayalam, Tamil, Telegu and Kannada.
 """
 
 import re
+import sys
 import json
 import argparse
-import commands as cm
 import unicodedata as ud
 
 import kenlm
 import numpy as np
 
 import ind_trans as tn
+from wxILP import wxilp
 
-__version__ = "2.1"
-__license__ = "MIT"
-__author__ = "Irshad Ahmad"
-__credits__ = ["Irshad Ahmad", "Riyaz Ahmad"]
-__maintainer__ = "Irshad Ahmad"
-__email__ = ["irshad.bhat@research.iiit.ac.in",
-	     "riyaz.bhat@research.iiit.ac.in",
-	     "bhatirshad127@gmail.com"]
+__version__	= "2.1"
+__license__	= "MIT"
+__author__	= "Irshad Ahmad"
+__credits__	= ["Irshad Ahmad", "Riyaz Ahmad"]
+__maintainer__	= "Irshad Ahmad"
+__email__ =	[
+		"irshad.bhat@research.iiit.ac.in",
+		"riyaz.bhat@research.iiit.ac.in",
+		"bhatirshad127@gmail.com"
+		]
 
 class LIT():
     
@@ -39,10 +42,12 @@ class LIT():
     probabilities obtained from the language models.
     """
 
-    def __init__(self, fp, labels):
+    def __init__(self, INFILE, OUTFILE, labels):
 	
-	self.fp = fp
 	self.labels = labels
+	self.INFILE = INFILE
+	self.OUTFILE = OUTFILE
+	self.wxp = wxilp(order="wx2utf")
 	self.tag_dct = {tag:i for i,tag in enumerate(labels)}
 	self.tree, self.queue, self.blm_wp, self.blm_sp = list(), list(), list(), list()
 
@@ -61,8 +66,6 @@ class LIT():
 	    self.blm_wp.append(kenlm.LanguageModel('blm_models/{}.tk.blm'.format(tag)))
 	    self.blm_sp.append(kenlm.LanguageModel('blm_models/{}.ts.blm'.format(tag)))
 
-	#self.kan_null = [3312, 3315, 3252, 3316, 3317, 3287, 3273, 3321,
-	#		3258, 3322, 3323, 3324, 3325, 3278, 3326, 3327]
 	# load emoticon set
 	with open('extras/emoticons.txt') as fp:
 	    self.emoticons = set(fp.read().split('\t'))
@@ -84,7 +87,6 @@ class LIT():
 			if ord(letter) in range(3328, 3456) else letter \
 			for letter in list(word.decode("utf-8"))] 
 	    
-	#return "".join([ch if ord(ch) not in self.kan_null else "" for ch in list(map_string)])
 	return "".join([ch for ch in map_string if ud.category(unichr(ord(ch))) != "Cn"])
 
     def transliterate(self, word, tag):
@@ -95,26 +97,24 @@ class LIT():
 	wx = tn.RomanConvertor(self.tree[self.tag_dct[tag]], word, tag).predict()
 	
 	if tag == 'guj':
-	    print "%s\\%s=%s" %(word, tag.title(), wx),
+	    self.OUTFILE.write("%s\\%s=%s" %(word, tag.title(), wx))
 	    return
 	
 	if tag == "kan":
-	    unicodeString = cm.getoutput("echo %s | bash $convertorIndic/wx2utf_run.sh \
-						    text %s 2> /dev/null" %(wx, "mal"))
-	    print "%s\\Kan=%s" %(word, self.mapper(unicodeString, "kannada", "malayalam")), 
+	    unicodeString = self.wxp.wx2utf(wx, "mal")	
+	    self.OUTFILE.write("%s\\Kan=%s" %(word, self.mapper(unicodeString, "kannada", "malayalam")))
 	    return
 	    	
 	# convert WX to native scripts
-    	unicodeString = cm.getoutput("echo %s | bash $convertorIndic/wx2utf_run.sh \
-						    text %s 2> /dev/null" %(wx, tag))
-    	print "%s\\%s=%s" %(word, tag.title(), unicodeString), 
+	unicodeString = self.wxp.wx2utf(wx, tag)	
+    	self.OUTFILE.write("%s\\%s=%s" %(word, tag.title(), unicodeString))
 
     def print_queue(self, i):
 
 	"""Assign \O (other) tag to all strings in queue"""
 	while self.queue:
 	    if self.queue[0][1] == i:
-		print self.queue.pop(0)[0] + '\O',
+		self.OUTFILE.write(self.queue.pop(0)[0] + '\O')
 	    else:
 		break
     	
@@ -139,12 +139,12 @@ class LIT():
 	idx = np.argmax(lang_probability)
 	tag = self.labels[idx]
 	if tag=='eng':
-	    print "{}\Eng".format(word),
+	    self.OUTFILE.write("{}\Eng".format(word))
 	else:
 	    if args.flag == 'T':
 		self.transliterate(word, tag)
 	    else:
-		print "{}\{}".format(word,tag.title()),
+		self.OUTFILE.write("{}\{}".format(word,tag.title()))
 	    
     def predict(self, word_list):
 
@@ -160,13 +160,13 @@ class LIT():
             if not word:
                 continue
 	    if word in self.emoticons:
-		print "%s\\EMT" %word,
+		self.OUTFILE.write("%s\\EMT" %word)
 		continue
             # label words that doesn't contain any alphabet with \O tag                     
             if not re.search(r'[a-zA-Z]',word):
 		step  = len(' '.join(tri_gram).split())
 		if not step:
-		    print word+"\O",
+		    self.OUTFILE.write(word+"\O")
 		    continue
 		self.queue.append((word, i+3))
 		continue
@@ -177,7 +177,7 @@ class LIT():
                 if not re.search(r'[a-zA-Z]',word):
 		    step  = len(' '.join(tri_gram).split())
 		    if not step:
-			print word+"\O",
+			self.OUTFILE.write(word+"\O")
 			continue
 		    self.queue.append((word, i+3))
 		    continue
@@ -208,15 +208,15 @@ class LIT():
 	
 	"""Passes list of words in a line to 'predict' function"""
 
-	for line in self.fp:
+	for line in self.INFILE:
 	    if not line:
-		print
+		self.OUTFILE.write('\n')
 		continue
 	    sentences = re.sub(r'([.?]\s\s*)([A-Z0-9])', r'\1\n\2', line).split('\n')
 	    for sen in sentences:
 		words = sen.split()
 		self.predict(words)
-	    print 
+	    self.OUTFILE.write('\n')
     
 if __name__ == "__main__":
 
@@ -228,26 +228,28 @@ if __name__ == "__main__":
     3. Transliteration flag (Optional)
     """
 
-    parser = argparse.ArgumentParser(description="Language Identification in Code-Mixing")
-    parser.add_argument('--f', dest='file_', required=True, help='Input code-mixed file')
-    parser.add_argument('--t', dest='tag',  help='Any space seperated tag combinations in quotes \
-						    from the list: [ban, eng, guj, hin, kan, mal, \
-						    tam, tel] e.g \'hin eng tel\'')
-    parser.add_argument('--o', dest='flag', help="set this to 'T' for back-transliteration")
+    lang_tags = ['ban', 'eng', 'guj', 'hin', 'kan', 'mal', 'tam', 'tel']
+    lang_help = 'Any language combination from the set : [%s]' %'|'.join(lang_tags)
+    parser = argparse.ArgumentParser(prog="litcm", description="Language Identification & Transliteration in Code-Mixing")
+    parser.add_argument('--v', action="version", version="%(prog)s 2.1")
+    parser.add_argument('--l', metavar='languages', dest='tag', help=lang_help)
+    parser.add_argument('--i', metavar='input', dest="INFILE", type=argparse.FileType('r'), default=sys.stdin, help="<input-file>")
+    parser.add_argument('--o', metavar='output', dest="OUTFILE", type=argparse.FileType('w'), default=sys.stdout, help="<output-file>")
+    parser.add_argument('--t', metavar='transliteration', dest='flag', help="set this to 'T' for back-transliteration of Indic words")
 
     args = parser.parse_args()
-    lang_tags = ['ban', 'eng', 'guj', 'hin', 'kan', 'mal', 'tam', 'tel']
 
     if args.tag:
-	labels = args.tag.split()
 	labels = [tag.lower() for tag in args.tag.split()]
 	assert len(labels) >= 2
 	assert set(labels).issubset(set(lang_tags))
     else:
 	labels = lang_tags
 
-    with open(args.file_) as fp:
-	idf = LIT(fp, labels)
-	idf.identify()
+    idf = LIT(args.INFILE, args.OUTFILE, labels)
+    idf.identify()
+
+    args.INFILE.close()
+    args.OUTFILE.close()
     
 
