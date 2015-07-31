@@ -228,23 +228,23 @@ if __name__ == "__main__":
     3. Transliteration flag (Optional)
     """
 
-    lang_tags = ['ban', 'eng', 'guj', 'hin', 'kan', 'mal', 'tam', 'tel']
-    lang_help = 'Any language combination from the set : [%s]' %'|'.join(lang_tags)
+    all_tags = ['ban', 'eng', 'guj', 'hin', 'kan', 'mal', 'tam', 'tel']
+    lang_help = 'Any language combination from the set: [%s]' %'|'.join(all_tags)
     parser = argparse.ArgumentParser(prog="litcm", description="Language Identification & Transliteration in Code-Mixing")
-    parser.add_argument('--v', action="version", version="%(prog)s 2.1")
-    parser.add_argument('--l', metavar='languages', dest='tag', help=lang_help)
+    parser.add_argument('--v', action='version', version="%(prog)s 2.1")
     parser.add_argument('--i', metavar='input', dest="INFILE", type=argparse.FileType('r'), default=sys.stdin, help="<input-file>")
     parser.add_argument('--o', metavar='output', dest="OUTFILE", type=argparse.FileType('w'), default=sys.stdout, help="<output-file>")
+    parser.add_argument('--l', metavar='languages', dest='lang_tags', nargs='+', help=lang_help)
     parser.add_argument('--t', metavar='transliteration', dest='flag', help="set this to 'T' for back-transliteration of Indic words")
 
     args = parser.parse_args()
 
-    if args.tag:
-	labels = [tag.lower() for tag in args.tag.split()]
+    if args.lang_tags:
+	labels = [tag.lower() for tag in args.lang_tags]
 	assert len(labels) >= 2
-	assert set(labels).issubset(set(lang_tags))
+	assert set(labels).issubset(set(all_tags))
     else:
-	labels = lang_tags
+	labels = all_tags
 
     idf = LIT(args.INFILE, args.OUTFILE, labels)
     idf.identify()
