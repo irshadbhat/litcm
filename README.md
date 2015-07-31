@@ -23,6 +23,11 @@ It is not necessary to mention the languages used in the code-mixed data but if 
 
     python lang_idf_tran.py --i inputfile --o[optional] outputfile -l[optional] 'hin tel eng' -t[optional] T
 
+    --i input            <input-file>
+    --o output           <output-file>
+    --l languages        Any language combination from the set: [ban|eng|guj|hin|kan|mal|tam|tel]
+    --t transliteration  set this to 'T' for back-transliteration of Indic words
+
 Language argument (-l) is optional and is a subset of eight language tags; {hin, ban, guj, tam, mal, kan, tel, eng}.
 
 Pass language agrument if there is a prior knowledge that only certain languages are present in the text. The languages passed should be from the given set of eight languages, enclosed in quotes and each language tag seperated by a space as shown. 
