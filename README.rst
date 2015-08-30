@@ -20,7 +20,7 @@ Dependencies
 
 .. _`NumPy`: http://numpy.scipy.org
 
-.. _`KenLM`: 'https://github.com/kpu/kenlm'
+.. _`KenLM`: https://github.com/kpu/kenlm
 
 
 Preprocessing
