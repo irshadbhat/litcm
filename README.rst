@@ -35,7 +35,7 @@ Preprocessing
 How to use ??
 =============
 
-::
+.. parsed-literal::
 
     python lang_idf_tran.py --i inputfile --o[optional] outputfile -l[optional] hin tel eng -t[optional] T
 
