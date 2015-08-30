@@ -51,9 +51,10 @@ How to use ??
     Transliteration arguments (-*t*) is also optional. Set this argument to T to back transliterate identified Indic words to their native scripts.
 
 
-
 Contact
 =======
+
+::
 
     Irshad Ahmad Bhat
     MS-CSE IIITH, Hyderabad
