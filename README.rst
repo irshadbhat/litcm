@@ -63,7 +63,9 @@ From Python
 
 .. code:: python
 
-	>>> from litcm import LIT>>> lit = LIT(['hin', 'eng'], transliteration=True)>>> 
+	>>> from litcm import LIT
+	>>> lit = LIT(['hin', 'eng'], transliteration=True)
+	>>> 
 	>>> text = "FOOD security bill pass ,. . acchi baat hai .... . Congress ke accoeding desh ke 80 carore logo ke liye tha ye bil ... . .. . .. . .. . .. . .. . .. . .. . . but I've a question ,. . kya yahi hai congress kaa bharat nirmaan , ki 65 years raaz karney ke baad bhi 80 carore log garib hain ... . Kitna lootego desh ko . . .. . .. . . or ek baat or jab desh kii aarthik condition ICU mai ho ,. . tab is situation mai ye bill laakr kya ram ram sath krbana hai desh kaa ..... ."
 	>>> 
 	>>> 
