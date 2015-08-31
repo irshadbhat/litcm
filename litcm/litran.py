@@ -108,7 +108,11 @@ class LIT():
 
         while self.queue:
             if self.queue[0][1] == i:
-                self.idfsen += self.queue.pop(0)[0] + '\O '
+                word = self.queue.pop(0)[0]
+                if word in self.emoticons:
+                    self.idfsen += "%s\\EMT " %word
+                else:
+                    self.idfsen += "%s\\O " %word
             else:
                 break
         
@@ -122,12 +126,11 @@ class LIT():
             if tag == 'eng':
                 word_probability = self.blm_wp[i].score(' '.join(word))
                 sen_probability = self.blm_sp[i].score(sen)
-                #print 'eng' , word_probability, sen_probability, word_probability + sen_probability 
             else:
                 word_probability = self.blm_wp[i].score(' '.join(word.lower()))
                 sen_probability = self.blm_sp[i].score(sen.lower())
-                #print 'oth' , word_probability, sen_probability, word_probability + sen_probability 
-            lang_probability.append(0.6*word_probability + 0.4*sen_probability - abs(word_probability)**.5 - abs(sen_probability)**.5)
+            #lang_probability.append(0.6*word_probability + 0.4*sen_probability - abs(word_probability)**.5 - abs(sen_probability)**.5)
+            lang_probability.append(word_probability + sen_probability)
 
         # find tag with highest probability 
         idx = np.argmax(lang_probability)
@@ -150,14 +153,14 @@ class LIT():
         for word in word_list:
             if not word:
                 continue
-            if word in self.emoticons:
-                self.idfsen += "%s\\EMT " %word
-                continue
             # label words that doesn't contain any alphabet with \O tag                     
             if not re.search(r'[a-zA-Z]',word):
                 step  = len(' '.join(tri_gram).split())
                 if not step:
-                    self.idfsen += word+"\O "
+                    if word in self.emoticons:
+                        self.idfsen += "%s\\EMT " %word
+                    else:
+                        self.idfsen += "%s\\O " %word
                     continue
                 self.queue.append((word, i+3))
                 continue
@@ -168,7 +171,10 @@ class LIT():
                 if not re.search(r'[a-zA-Z]',word):
                     step  = len(' '.join(tri_gram).split())
                     if not step:
-                        self.idfsen += word+"\O "
+                        if word in self.emoticons:
+                            self.idfsen += "%s\\EMT " %word
+                        else:
+                            self.idfsen += "%s\\O " %word
                         continue
                     self.queue.append((word, i+3))
                     continue
