@@ -97,24 +97,24 @@ class LIT():
 	wx = tn.RomanConvertor(self.tree[self.tag_dct[tag]], word, tag).predict()
 	
 	if tag == 'guj':
-	    self.OUTFILE.write("%s\\%s=%s" %(word, tag.title(), wx))
+	    self.OUTFILE.write("%s\\%s=%s " %(word, tag.title(), wx))
 	    return
 	
 	if tag == "kan":
 	    unicodeString = self.wxp.wx2utf(wx, "mal")	
-	    self.OUTFILE.write("%s\\Kan=%s" %(word, self.mapper(unicodeString, "kannada", "malayalam")))
+	    self.OUTFILE.write("%s\\Kan=%s " %(word, self.mapper(unicodeString, "kannada", "malayalam")))
 	    return
 	    	
 	# convert WX to native scripts
 	unicodeString = self.wxp.wx2utf(wx, tag)	
-    	self.OUTFILE.write("%s\\%s=%s" %(word, tag.title(), unicodeString))
+    	self.OUTFILE.write("%s\\%s=%s " %(word, tag.title(), unicodeString))
 
     def print_queue(self, i):
 
 	"""Assign \O (other) tag to all strings in queue"""
 	while self.queue:
 	    if self.queue[0][1] == i:
-		self.OUTFILE.write(self.queue.pop(0)[0] + '\O')
+		self.OUTFILE.write(self.queue.pop(0)[0] + '\O ')
 	    else:
 		break
     	
@@ -139,12 +139,12 @@ class LIT():
 	idx = np.argmax(lang_probability)
 	tag = self.labels[idx]
 	if tag=='eng':
-	    self.OUTFILE.write("{}\Eng".format(word))
+	    self.OUTFILE.write("{}\Eng ".format(word))
 	else:
 	    if args.flag == 'T':
 		self.transliterate(word, tag)
 	    else:
-		self.OUTFILE.write("{}\{}".format(word,tag.title()))
+		self.OUTFILE.write("{}\{} ".format(word,tag.title()))
 	    
     def predict(self, word_list):
 
@@ -160,13 +160,13 @@ class LIT():
             if not word:
                 continue
 	    if word in self.emoticons:
-		self.OUTFILE.write("%s\\EMT" %word)
+		self.OUTFILE.write("%s\\EMT " %word)
 		continue
             # label words that doesn't contain any alphabet with \O tag                     
             if not re.search(r'[a-zA-Z]',word):
 		step  = len(' '.join(tri_gram).split())
 		if not step:
-		    self.OUTFILE.write(word+"\O")
+		    self.OUTFILE.write(word+"\O ")
 		    continue
 		self.queue.append((word, i+3))
 		continue
@@ -177,7 +177,7 @@ class LIT():
                 if not re.search(r'[a-zA-Z]',word):
 		    step  = len(' '.join(tri_gram).split())
 		    if not step:
-			self.OUTFILE.write(word+"\O")
+			self.OUTFILE.write(word+"\O ")
 			continue
 		    self.queue.append((word, i+3))
 		    continue
