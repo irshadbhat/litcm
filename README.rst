@@ -13,7 +13,9 @@ It is not necessary to mention the languages mixed in the data file but if there
 References
 ==========
 
-https://www.academia.edu/15047617/IIIT-H_System_Submission_for_FIRE2014_Shared_Task_on_Transliterated_Search
+`IIIT-H System Submission for FIRE2014 Shared Task on Transliterated Search`_
+
+.. _`IIIT-H System Submission for FIRE2014 Shared Task on Transliterated Search`: https://www.academia.edu/15047617/IIIT-H_System_Submission_for_FIRE2014_Shared_Task_on_Transliterated_Search
 
 Installation
 ============
