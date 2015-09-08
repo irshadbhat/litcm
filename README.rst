@@ -10,6 +10,11 @@ Input file can have words in any of the above mentioned languages in Roman scrip
 
 It is not necessary to mention the languages mixed in the data file but if there is some prior knowledge aboubt the languages mixed in the data file, it is better to pass the language codes using language argument to the script as shown in the usage section. Note that if the language argument is not used then by default the script will consider all the languages and predict words accordingly.
 
+References
+==========
+
+https://www.academia.edu/15047617/IIIT-H_System_Submission_for_FIRE2014_Shared_Task_on_Transliterated_Search
+
 Installation
 ============
 
