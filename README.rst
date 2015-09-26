@@ -27,7 +27,9 @@ Installation
 Dependencies
 ~~~~~~~~~~~~
 
-**litcm** requires `NumPy`_ and `KenLM`_.
+`litcm`_ requires `NumPy`_ and `KenLM`_.
+
+.. _`litcm`: https://github.com/irshadbhat/litcm
 
 .. _`NumPy`: http://numpy.scipy.org
 
