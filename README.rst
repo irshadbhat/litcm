@@ -87,8 +87,6 @@ From Python
 	>>> 
 	>>> 
 
-
-
 Contact
 =======
 
@@ -99,9 +97,15 @@ Contact
     bhatirshad127@gmail.com
     irshad.bhat@research.iiit.ac.in
 
-If you use this code for a publication, please cite the following paper:
 
-@inproceedings{bhat2014iiit,
-  title={IIIT-H System Submission for FIRE 2014 Shared Task on Transliterated Search},
-  author={Bhat, Irshad Ahmad and Mujadia, Vandan and Tammewar, Aniruddha and Bhat, Riyaz Ahmad and Shrivastava, Manish}
-}
+Citation:
+========
+
+::
+
+    If you use this code for a publication, please cite the following paper:
+    
+    @inproceedings{bhat2014iiit,
+      title={IIIT-H System Submission for FIRE 2014 Shared Task on Transliterated Search},
+      author={Bhat, Irshad Ahmad and Mujadia, Vandan and Tammewar, Aniruddha and Bhat, Riyaz Ahmad and Shrivastava, Manish}
+    }
