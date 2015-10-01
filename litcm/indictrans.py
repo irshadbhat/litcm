@@ -79,6 +79,6 @@ class RomanConvertor():
         
         if not self.transliterated_:
             return ""
-        if self.transliterated_[-1] not in 'aeiouAEIOU' and self.tag != 'guj':
-            self.transliterated_ += 'a'
+        #if self.transliterated_[-1] not in 'aeiouAEIOU' and self.tag != 'guj':
+        #    self.transliterated_ += 'a'
         return self.transliterated_.encode('utf-8')
