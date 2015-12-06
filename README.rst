@@ -15,11 +15,7 @@ References
 
 `IIIT-H System Submission for FIRE2014 Shared Task on Transliterated Search`_
 
-`FIRE2014 IIITH`_
-
-.. _`IIIT-H System Submission for FIRE2014 Shared Task on Transliterated Search`: https://www.academia.edu/15047617/IIIT-H_System_Submission_for_FIRE2014_Shared_Task_on_Transliterated_Search
-
-.. _`FIRE2014 IIITH`: http://www.isical.ac.in/~fire/working-notes/2014/MSR/
+.. _`IIIT-H System Submission for FIRE2014 Shared Task on Transliterated Search`: http://dl.acm.org/citation.cfm?doid=2824864.2824872
 
 Installation
 ============
