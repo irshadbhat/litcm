@@ -129,7 +129,6 @@ class LIT():
             else:
                 word_probability = self.blm_wp[i].score(' '.join(word.lower()))
                 sen_probability = self.blm_sp[i].score(sen.lower())
-            #lang_probability.append(0.6*word_probability + 0.4*sen_probability - abs(word_probability)**.5 - abs(sen_probability)**.5)
             lang_probability.append(word_probability + sen_probability)
 
         # find tag with highest probability 
