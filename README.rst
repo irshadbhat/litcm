@@ -46,7 +46,7 @@ Install
    cd litcm
    sudo python setup.py install
 
-   OR
+   or
     
    pip install git+git://github.com/irshadbhat/litcm.git 
 
