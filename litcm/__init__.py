@@ -33,7 +33,7 @@ def main():
         assert len(labels) >= 2
         assert set(labels).issubset(set(all_tags))
     else:
-        labels = all_tags
+        labels = ['hin', 'eng']
 
     lit = LIT(labels, transliteration=args.flag)
     for line in args.INFILE:

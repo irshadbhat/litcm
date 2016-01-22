@@ -38,7 +38,7 @@ class LIT():
     and other for 5-gram word context. Decision rule is made using a linear 
     combination of probabilities obtained from the language models."""
 
-    def __init__(self, labels, transliteration=False):
+    def __init__(self, labels=['hin', 'eng'], transliteration=False):
         self.flag = transliteration        
         self.labels = labels
         self.wxp = wxilp(order="wx2utf")

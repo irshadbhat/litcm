@@ -4,11 +4,9 @@ Language Identification and Transliteration in Code Mixing (litcm):
 
 Language Identification and Transliteration system for Indian Languages in Roman script, code mixed with English.
 
-The tool is meant for English and seven Indian languages viz. Hindi, Bengali, Kanadda, Tamil, Malayalam, Telegu and Gujrati, code mixed with each other.  
+The tool is meant for English code-mixed with any of seven Indian languages viz. Hindi, Bengali, Kanadda, Tamil, Malayalam, Telegu and Gujrati.
 
 Input file can have words in any of the above mentioned languages in Roman script.
-
-It is not necessary to mention the languages mixed in the data file but if there is some prior knowledge aboubt the languages mixed in the data file, it is better to pass the language codes using language argument to the script as shown in the usage section. Note that if the language argument is not used then by default the script will consider all the languages and predict words accordingly.
 
 References
 ==========
@@ -71,7 +69,7 @@ From Python
 .. code:: python
 
 	>>> from litcm import LIT
-	>>> lit = LIT(['hin', 'eng'], transliteration=True)
+	>>> lit = LIT(labels=['hin', 'eng'], transliteration=True)
 	>>> 
 	>>> text = "FOOD security bill pass ,. . acchi baat hai .... . Congress ke accoeding desh ke 80 carore logo ke liye tha ye bil ... . .. . .. . .. . .. . .. . .. . .. . . but I've a question ,. . kya yahi hai congress kaa bharat nirmaan , ki 65 years raaz karney ke baad bhi 80 carore log garib hain ... . Kitna lootego desh ko . . .. . .. . . or ek baat or jab desh kii aarthik condition ICU mai ho ,. . tab is situation mai ye bill laakr kya ram ram sath krbana hai desh kaa ..... ."
 	>>> 
