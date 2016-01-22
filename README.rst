@@ -31,26 +31,19 @@ Dependencies
 
 .. _`KenLM`: https://github.com/kpu/kenlm
 
-
-Preprocessing
-~~~~~~~~~~~~~
+To install the dependencies do something like (Ubuntu):
 
 ::
 
-    Unzip all files in blm_models directory:
-
-    tar -xvzf litcm.tar.gz
-    cd litcm
-    gunzip litcm/blm_models/*
-
+    pip install numpy
+    pip install https://github.com/kpu/kenlm/archive/master.zip
 
 Install
 ~~~~~~~
 
 ::
-
-    sudo python setup.py install
     
+   pip install git+git://github.com/irshadbhat/litcm.git 
 
 How to use ??
 =============
