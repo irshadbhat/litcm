@@ -15,6 +15,12 @@ except ImportError:
         print("Cannot import py2exe", file=sys.stderr)
         exit(1)
 
+dist_dir = os.path.dirname(os.path.abspath(__file__))
+print(dist_dir)
+sys.stderr.write('extracting models... (this might take some time...)\n')
+os.system("gunzip -kf %s/litcm/blm_models/* 2> /dev/null" %dist_dir)
+sys.stderr.write('model extraction complete!\n')
+
 py2exe_options = {
     "bundle_files": 1,
     "compressed": 1,
