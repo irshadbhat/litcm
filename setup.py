@@ -61,7 +61,7 @@ else:
     }
     params['entry_points'] = {'console_scripts': ['litcm = litcm:main']}
 
-# Get the version from youtube_dl/version.py without importing the package
+# Get the package version
 exec(compile(open('litcm/version.py').read(),
              'litcm/version.py', 'exec'))
 
@@ -83,10 +83,16 @@ setup(
     package_data={'litcm': ['blm_models/*.blm', 'decision_trees/*.json', 'extras/*.txt']},
 
     classifiers=[
-        "Topic :: Indian Languages :: Language Identification",
+        "Topic :: Text Processing :: Linguistic",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Development Status :: 4 - Beta", 
         "Environment :: Console",
-        "License :: Public Domain",
-        "Programming Language :: Python :: 2.7"
+        "Intended Audience :: Science/Research",
+        "License :: OSI Approved :: MIT License",
+        "Natural Language :: English",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.3",
+        "Operating System :: Unix"
     ],
 
     **params
